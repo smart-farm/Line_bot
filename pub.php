@@ -1,8 +1,8 @@
  <?php
  function pubMqtt($topic,$msg){
        $APPID= "ESP32linebot/"; //enter your appid
-     $KEY = "dvd1gQZPqxmeFgz"; //enter your key
-    $SECRET = "BSlwAsLWSK1pDdH4dKBI0Au6A"; //enter your secret
+     $KEY = "gsuaP6pTvpTrrZB"; //enter your key
+    $SECRET = "pUlF8jwmfC9fzC4qlN3GnYfbm"; //enter your secret
     $Topic = "$topic"; 
       put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
  
