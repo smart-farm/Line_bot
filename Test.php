@@ -11,4 +11,5 @@ include("connect.php");
          if ($formula=="")
          { $formula="line_puk.php?formula=p50&status=h"; }
 echo $formula;
+echo "OK".$formula;
 ?>
