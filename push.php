@@ -58,7 +58,7 @@
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
    }
 
-   if($message == "สถิติเลขไหล"&&$id==$idvip||$id==$idfree){
+   /*if($message == "สถิติเลขไหล"&&$id==$idvip||$id==$idfree){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-flow.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -67,7 +67,7 @@
       $arrayPostData1['messages'][0]['text'] = $content;
       pushMsg($arrayHeader,$arrayPostData1);
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
-   }
+   }*/
 
 
 
