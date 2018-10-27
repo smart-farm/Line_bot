@@ -10,6 +10,6 @@ include("connect.php");
          $formula=$op[formula];
          if ($formula=="")
          { $formula="line_puk.php?formula=p50&status=h"; }
-echo $formula;
-echo "OK".$formula;
+//echo $formula;
+echo "OK";
 ?>
