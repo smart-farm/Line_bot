@@ -10,7 +10,7 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['groupId'];
    #ตัวอย่าง Message Type "Text + Sticker"
-   $puk = file_get_contents('http://www.phonenana.com/yeekee/line_puk.php?formula=p53&status=hl');
+   $puk ="Test";
    $win = file_get_contents('http://www.phonenana.com/yeekee/line_win.php?formula=v222&status=h');
    $seal = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=b&status=shl');
    $rood = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=bd&status=hl');
