@@ -10,50 +10,39 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['groupId'];
    #ตัวอย่าง Message Type "Text + Sticker"
+   $puk = file_get_contents('http://www.phonenana.com/yeekee/line_puk.php?formula=p53&status=hl');
+   $win = file_get_contents('http://www.phonenana.com/yeekee/line_win.php?formula=v222&status=h');
+   $seal = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=b&status=shl');
+   $rood = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=bd&status=hl');
+   if($message == "เลขปัก"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = $puk;
+
+      pushMsg($arrayHeader,$arrayPostData);
+   }
    if($message == "เลขวิน"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] = "﻿แทงบน + สลับเลข (สูตร ACH)
-➖➖➖➖➖➖➖➖
-14=67890123=392/27 ✔️
-15=90123456=725/64 ✔️
-16=89012345=832/31 ✔️
-17=45678901=969/13 ✔️
-18=56789012=361/22 ✔️
-19=45678901=896/97 ✔️
-20=45678901=460/54 ✔️
-21=56789012=049/71 ❌
-22=67890123=570/49 ✔️
-23=12345678=086/36 ✔️
+      $arrayPostData['messages'][0]['text'] = $win;
 
-รอบที่ 24 : 12345678 (ดับ 9/0)
-➖➖➖➖➖➖➖➖
-12, 13, 14, 15, 16, 17, 18
-23, 24, 25, 26, 27, 28, 34
-35, 36, 37, 38, 45, 46, 47
-48, 56, 57, 58, 67, 68, 78
-
-รอบที่ 24 : สามตัวโต๊ด (ดับ 9/0)
-➖➖➖➖➖➖➖➖
-123, 124, 125, 126, 127
-128, 134, 135, 136, 137
-138, 145, 146, 147, 148
-156, 157, 158, 167, 168
-178, 234, 235, 236, 237
-238, 245, 246, 247, 248
-256, 257, 258, 267, 268
-278, 345, 346, 347, 348
-356, 357, 358, 367, 368
-378, 456, 457, 458, 467
-468, 478, 567, 568, 578
-678
-➖➖➖➖➖➖➖➖
-www.phonenana.com";
-  //    $arrayPostData['messages'][1]['type'] = "sticker";
-    //  $arrayPostData['messages'][1]['packageId'] = "2";
-    //  $arrayPostData['messages'][1]['stickerId'] = "34";
       pushMsg($arrayHeader,$arrayPostData);
    }
+
+   if($message == "เลขเสียว"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] =$seal;
+      pushMsg($arrayHeader,$arrayPostData);
+   }
+
+   if($message == "เลขรูด"){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] = $rood;
+      pushMsg($arrayHeader,$arrayPostData);
+   }
+
    function pushMsg($arrayHeader,$arrayPostData){
       $strUrl = "https://api.line.me/v2/bot/message/push";
       $ch = curl_init();
