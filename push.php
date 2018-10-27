@@ -28,8 +28,8 @@
      					$formula=$op[formula];
      					if ($formula=="")
      					{ $formula="line_puk.php?formula=p50&status=h"; }
-
-     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/$formula");*/
+*/
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/line_puk.php?formula=p50&status=h");*
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
      echo $content;
       $arrayPostData['to'] = $id;
