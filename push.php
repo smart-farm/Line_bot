@@ -15,21 +15,21 @@
    $seal = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=b&status=shl');
    $rood = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=bd&status=hl');
 
-   date_default_timezone_set("Asia/Bangkok");
+   /*date_default_timezone_set("Asia/Bangkok");
    $today=date("Y-m-d");
    if(time()>=strtotime("00:00:00") && time()<strtotime("00:00:00 + 4 hour"))
    {$today=date("Y-m-d",strtotime("-1 days",strtotime($today)));}
-   include("connect.php");
+   include("connect.php");*/
    if($message == "เลขปัก"){
 
-     					$sql="SELECT* from bot_puk where date='$today' ORDER BY bot_id DESC LIMIT 0,1";
+     		/*			$sql="SELECT* from bot_puk where date='$today' ORDER BY bot_id DESC LIMIT 0,1";
      					$result=mysql_db_query($dbname,$sql);
      					$op=mysql_fetch_array($result);
      					$formula=$op[formula];
      					if ($formula=="")
      					{ $formula="line_puk.php?formula=p50&status=h"; }
 
-     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/$formula");
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/$formula");*/
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
      echo $content;
       $arrayPostData['to'] = $id;
