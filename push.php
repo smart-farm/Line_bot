@@ -10,10 +10,10 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['groupId'];
    #ตัวอย่าง Message Type "Text + Sticker"
-   $puk = file_get_contents('http://www.phonenana.com/yeekee/line_puk.php?formula=p53&status=hl');
-   $win = file_get_contents('http://www.phonenana.com/yeekee/line_win.php?formula=v222&status=h');
-   $seal = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=b&status=shl');
-   $rood = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=bd&status=hl');
+   //$puk = file_get_contents('http://www.phonenana.com/yeekee/line_puk.php?formula=p53&status=hl');
+   //$win = file_get_contents('http://www.phonenana.com/yeekee/line_win.php?formula=v222&status=h');
+   //$seal = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=b&status=shl');
+   //$rood = file_get_contents('http://www.phonenana.com/yeekee/line.php?formula=bd&status=hl');
 
    /*date_default_timezone_set("Asia/Bangkok");
    $today=date("Y-m-d");
@@ -30,7 +30,8 @@
      					{ $formula="line_puk.php?formula=p50&status=h"; }
 */
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/line_puk.php?formula=p50&status=h");*
-     $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
+
+     //$content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
      echo $content;
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
