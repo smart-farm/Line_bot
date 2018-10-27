@@ -14,7 +14,7 @@
    $idVip ='C678b1d0f7f216ba96cf8b6e784bac718';
 
 
-   if($message == "เลขปัก"&&id==$idsmile||id==$idfree||id==$idVip){
+   if($message == "เลขปัก" and id==$idsmile or id==$idfree or id==$idVip){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-puk.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
     // echo $content;
