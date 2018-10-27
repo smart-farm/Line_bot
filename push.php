@@ -19,7 +19,7 @@
    if($message == "เลขปัก"){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-puk.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
-     echo $content;
+    // echo $content;
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
       $arrayPostData['messages'][0]['text'] = $content;
@@ -27,25 +27,36 @@
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
    }
    if($message == "เลขวิน"){
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win.php");
+     $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
+    // echo $content;
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] = $win;
-
+      $arrayPostData['messages'][0]['text'] = $content;
       pushMsg($arrayHeader,$arrayPostData);
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
    }
 
    if($message == "เลขเสียว"){
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-seal.php");
+     $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
+    // echo $content;
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] =$seal;
+      $arrayPostData['messages'][0]['text'] = $content;
       pushMsg($arrayHeader,$arrayPostData);
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
    }
 
    if($message == "เลขรูด"){
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood.php");
+     $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
+    // echo $content;
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] = $rood;
+      $arrayPostData['messages'][0]['text'] = $content;
       pushMsg($arrayHeader,$arrayPostData);
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
    }
 
    function pushMsg($arrayHeader,$arrayPostData){
