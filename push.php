@@ -10,13 +10,27 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['groupId'];
    #ตัวอย่าง Message Type "Text + Sticker"
-   if($message == "สวัสดี"){
+   if($message == "เลขเสียว"){
       $arrayPostData['to'] = $id;
       $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
-      $arrayPostData['messages'][1]['type'] = "sticker";
-      $arrayPostData['messages'][1]['packageId'] = "2";
-      $arrayPostData['messages'][1]['stickerId'] = "34";
+      $arrayPostData['messages'][0]['text'] = "﻿วิ่งบน รูด บ/ล. (สูตร 9)
+➖➖➖➖➖➖➖➖
+13=9=093/93 ✔️
+14=9=392/27 ✔️
+15=9=725/64 ❌
+16=9=832/31 ❌
+17=9=969/13 ✔️
+18=9=361/22 ❌
+19=9=896/97 ✔️
+20=9=460/54 ❌
+21=9=049/71 ✔️
+22=9=570/49 ✔️
+23=9=รอผล..
+➖➖➖➖➖➖➖➖
+www.phonenana.com";
+  //    $arrayPostData['messages'][1]['type'] = "sticker";
+    //  $arrayPostData['messages'][1]['packageId'] = "2";
+    //  $arrayPostData['messages'][1]['stickerId'] = "34";
       pushMsg($arrayHeader,$arrayPostData);
    }
    function pushMsg($arrayHeader,$arrayPostData){
