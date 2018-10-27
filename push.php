@@ -9,12 +9,12 @@
    $message = $arrayJson['events'][0]['message']['text'];
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['groupId'];
-   $idsmile ='Cd8562369e04d45495e12c8c830ea3863';
+   //$idsmile ='Cd8562369e04d45495e12c8c830ea3863';
    $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
    $idvip ='C678b1d0f7f216ba96cf8b6e784bac718';
 
 
-   if($message == "เลขปัก"&&$id==$idvip||$id==$idfree||$id==$idsmile){
+   if($message == "เลขปัก"&&$id==$idvip||$id==$idfree){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-puk.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -25,7 +25,7 @@
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
    }
 
-   if($message == "เลขวิน"&&$id==$idvip||$id==$idfree||$id==$idsmile){
+   if($message == "เลขวิน"&&$id==$idvip||$id==$idfree){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -36,7 +36,7 @@
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
    }
 
-   if($message == "เลขเสียว"&&$id==$idvip||$id==$idfree||$id==$idsmile){
+   if($message == "เลขเสียว"&&$id==$idvip||$id==$idfree){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-seal.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -47,7 +47,7 @@
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
    }
 
-   if($message == "เลขรูด"&&$id==$idvip||$id==$idfree||$id==$idsmile){
+   if($message == "เลขรูด"&&$id==$idvip||$id==$idfree){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -58,7 +58,7 @@
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
    }
 
-   if($message == "สถิติเลขไหล"){
+   if($message == "สถิติเลขไหล"&&$id==$idvip||$id==$idfree){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-flow.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews.txt", "\xEF\xBB\xBF");
     // echo $content;
