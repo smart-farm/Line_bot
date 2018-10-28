@@ -9,9 +9,10 @@
    $message = $arrayJson['events'][0]['message']['text'];
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['groupId'];
-   //$idsmile ='Cd8562369e04d45495e12c8c830ea3863';
+   $idsmile ='Cd8562369e04d45495e12c8c830ea3863';
    $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
    $idvip ='C678b1d0f7f216ba96cf8b6e784bac718';
+   $id199 ='C678b1d0f7f216ba96cf8b6e784bac718';
 
 
    if($message == "เลขปัก"){
@@ -67,6 +68,18 @@
       $arrayPostData1['messages'][0]['text'] = $content;
       pushMsg($arrayHeader,$arrayPostData1);
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
+   }
+
+   if($message == "หวยรัฐบาล"){
+     if($id==$idvip||$id==$id199){
+     $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt", "\xEF\xBB\xBF");
+    // echo $content;
+      $arrayPostData1['to'] = $id;
+      $arrayPostData1['messages'][0]['type'] = "text";
+      $arrayPostData1['messages'][0]['text'] = $content;
+      pushMsg($arrayHeader,$arrayPostData1);
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
+     }
    }
 
 
