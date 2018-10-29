@@ -79,7 +79,67 @@
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-flow.php");
    }
    }
+   if($message == "สุ่มเลข"){
+     $random=(rand(0,4));
+     if($random==0){
+       $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-puk.php");
+       $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-puk.txt", "\xEF\xBB\xBF");
+      // echo $content;
+        $arrayPostData['to'] = $id;
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = $content;
+        pushMsg($arrayHeader,$arrayPostData);
+       $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
 
+  }
+  if($random==1){
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win.php");
+    $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-win.txt", "\xEF\xBB\xBF");
+   // echo $content;
+     $arrayPostData['to'] = $id;
+     $arrayPostData['messages'][0]['type'] = "text";
+     $arrayPostData['messages'][0]['text'] = $content;
+     pushMsg($arrayHeader,$arrayPostData);
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-win.php");
+
+  }
+  if($random==2){
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-seal.php");
+    $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-rood.txt", "\xEF\xBB\xBF");
+   // echo $content;
+     $arrayPostData['to'] = $id;
+     $arrayPostData['messages'][0]['type'] = "text";
+     $arrayPostData['messages'][0]['text'] = $content;
+     pushMsg($arrayHeader,$arrayPostData);
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php");
+
+  }
+  if($random==3){
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood.php");
+    $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-rood.txt", "\xEF\xBB\xBF");
+   // echo $content;
+     $arrayPostData['to'] = $id;
+     $arrayPostData['messages'][0]['type'] = "text";
+     $arrayPostData['messages'][0]['text'] = $content;
+     pushMsg($arrayHeader,$arrayPostData);
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php");
+
+  }
+  if($random==4){
+
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-flow.php");
+    $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-flow.txt", "\xEF\xBB\xBF");
+   // echo $content;
+     $arrayPostData1['to'] = $id;
+     $arrayPostData1['messages'][0]['type'] = "text";
+     $arrayPostData1['messages'][0]['text'] = $content;
+     pushMsg($arrayHeader,$arrayPostData1);
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-flow.php");
+
+  }
+
+
+  }
    if($message == "หวยรัฐบาล"){
      if($id==$idvip||$id==$id199){
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt", "\xEF\xBB\xBF");
