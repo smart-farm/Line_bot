@@ -79,7 +79,8 @@
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-flow.php");
    }
    }
-   if($message == "สุ่มเลข"){
+
+   if($message =="เลขแนะนำ"){
      $random=(rand(0,4));
      if($random==0){
        $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-puk.php");
