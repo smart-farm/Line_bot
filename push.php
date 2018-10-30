@@ -67,7 +67,7 @@
    }
    }
 
-   if($message == "เลขไหล"){
+   if($message =="เลขไหล"){
      if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-flow.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-flow.txt", "\xEF\xBB\xBF");
