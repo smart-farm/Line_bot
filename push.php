@@ -10,8 +10,8 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['groupId'];
    $idsmile ='Cd8562369e04d45495e12c8c830ea3863';
-   //$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
-   $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
+   $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+   //$idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
    $idvip ='C22521a49473a70959e78d41650314a50';
    $id199 ='C678b1d0f7f216ba96cf8b6e784bac718';
 
