@@ -143,9 +143,21 @@
 
 
   }
-   if($message == "หวยรัฐบาล"){
+   if($message == "หวยรัฐบน"){
      if($id==$idvip||$id==$id199){
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt", "\xEF\xBB\xBF");
+    // echo $content;
+      $arrayPostData1['to'] = $id;
+      $arrayPostData1['messages'][0]['type'] = "text";
+      $arrayPostData1['messages'][0]['text'] = $content;
+      pushMsg($arrayHeader,$arrayPostData1);
+     //$requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php");
+     }
+   }
+
+   if($message == "หวยรัฐล่าง"){
+     if($id==$idvip||$id==$id199){
+     $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto-in.txt", "\xEF\xBB\xBF");
     // echo $content;
       $arrayPostData1['to'] = $id;
       $arrayPostData1['messages'][0]['type'] = "text";
