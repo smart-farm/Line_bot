@@ -10,9 +10,30 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['groupId'];
    //$idsmile ='Cd8562369e04d45495e12c8c830ea3863';
+   $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
+   date_default_timezone_set("Asia/Bangkok");
+    $today=date("Y-m-d");
+    if($id==$idcheck&&time()>=strtotime("19:00:00")&& time()<strtotime("23:59:00 + 1 hour"))
+    {
+      $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
+     $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+
+   }else{
+     $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
+     if($id==$idcheck){
+     $arrayPostData['to'] = $idcheck;
+     $arrayPostData['messages'][0]['type'] = "text";
+     $arrayPostData['messages'][0]['text'] ="แจ้งสมาชิก เรื่องการส่งเลขแบบพิเศษ
+----------------------
+ระบบส่งเลขตามคำสั่ง Line จะเปิดให้บริการอีกครั้ง
+เวลา 19.00 น. แต่ทางโปรแกรมอีซี่รอตโต้จะยังส่ง
+เลขยี่กี 1 สูตร ทุกๆ 15 นาที ตามปกติจ้า.
+----------------------
+ขออภัยในความ..ไม่ีสะดวก";
+     pushMsg($arrayHeader,$arrayPostData);
+     }
+   }
    $idsmile ='Cd8562369e04d45495e12c8c830ea3863333';
-   //$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
-   $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
    $idvip ='C22521a49473a70959e78d41650314a50';
    $id199 ='C678b1d0f7f216ba96cf8b6e784bac718';
 
