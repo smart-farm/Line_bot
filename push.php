@@ -11,7 +11,7 @@
    $id = $arrayJson['events'][0]['source']['groupId'];
    //$idsmile ='Cd8562369e04d45495e12c8c830ea3863';
    $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
-   date_default_timezone_set("Asia/Bangkok");
+   /*date_default_timezone_set("Asia/Bangkok");
     $today=date("Y-m-d");
     if($id==$idcheck&&time()>=strtotime("19:00:00")&& time()<strtotime("23:59:00 + 1 hour"))
     {
@@ -29,10 +29,11 @@
 เวลา 19.00 น. แต่ทางโปรแกรมอีซี่รอตโต้จะยังส่ง
 เลขยี่กี 1 สูตร ทุกๆ 15 นาที ตามปกติจ้า.
 ----------------------
-ขออภัยในความ..ไม่ีสะดวก";
+ขออภัยในความ..ไม่สะดวก";
      pushMsg($arrayHeader,$arrayPostData);
      }
-   }
+   }*/
+   $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
    $idsmile ='Cd8562369e04d45495e12c8c830ea3863333';
    $idvip ='C22521a49473a70959e78d41650314a50';
    $id199 ='C678b1d0f7f216ba96cf8b6e784bac718';
