@@ -15,7 +15,7 @@
     $today=date("Y-m-d");
     if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"){
     if($id==$idcheck){
-    if(time()>=strtotime("19:00:00")&& time()<strtotime("23:59:00 + 2 hour"))
+    if(time()>=strtotime("19:00:00")&& time()<strtotime("00:00:00 + 1 hour"))
     {
       $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
      $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
