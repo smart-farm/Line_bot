@@ -165,9 +165,20 @@
     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-flow.php");
 
   }
-
-
   }
+  if($message == "เลขตอง"){
+    if($id==$idvip||$id==$id199||$id==$idfree){
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/remind.php");
+    $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-tong.txt", "\xEF\xBB\xBF");
+   // echo $content;
+     $arrayPostData1['to'] = $id;
+     $arrayPostData1['messages'][0]['type'] = "text";
+     $arrayPostData1['messages'][0]['text'] = $content;
+     pushMsg($arrayHeader,$arrayPostData1);
+    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-tong.php");
+    }
+  }
+
    if($message == "หวยรัฐบน"){
      if($id==$idvip||$id==$id199){
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt", "\xEF\xBB\xBF");
