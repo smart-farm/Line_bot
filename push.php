@@ -107,6 +107,19 @@
    }
    }
 
+   if($message=="เลขตอง"){
+     if($id==$idfree||$id==$idvip||$id==$id199){
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/remind.php");
+     $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-tong.txt", "\xEF\xBB\xBF");
+    // echo $content;
+      $arrayPostData1['to'] = $id;
+      $arrayPostData1['messages'][0]['type'] = "text";
+      $arrayPostData1['messages'][0]['text'] = $content;
+      pushMsg($arrayHeader,$arrayPostData1);
+     $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-tong.php");
+     }
+   }
+
    if($message =="เลขแนะนำ"){
      $random=(rand(0,4));
      if($random==0){
@@ -166,18 +179,7 @@
 
   }
   }
-  if($message == "เลขตอง"){
-    if($id==$idvip||$id==$id199||$id==$idfree){
-    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/remind.php");
-    $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-tong.txt", "\xEF\xBB\xBF");
-   // echo $content;
-     $arrayPostData1['to'] = $id;
-     $arrayPostData1['messages'][0]['type'] = "text";
-     $arrayPostData1['messages'][0]['text'] = $content;
-     pushMsg($arrayHeader,$arrayPostData1);
-    $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/del-tong.php");
-    }
-  }
+
 
    if($message == "หวยรัฐบน"){
      if($id==$idvip||$id==$id199){
