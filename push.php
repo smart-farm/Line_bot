@@ -183,7 +183,7 @@
 
 
    if($message == "หวยรัฐบน"){
-     if($id==$idvip||$id==$id199){
+     if($id==$idvip||$id==$id199||$id==$idsmile){
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt", "\xEF\xBB\xBF");
     // echo $content;
       $arrayPostData1['to'] = $id;
@@ -195,7 +195,7 @@
    }
 
    if($message == "หวยรัฐล่าง"){
-     if($id==$idvip||$id==$id199){
+     if($id==$idvip||$id==$id199||$id==$idsmile){
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto-in.txt", "\xEF\xBB\xBF");
     // echo $content;
       $arrayPostData1['to'] = $id;
