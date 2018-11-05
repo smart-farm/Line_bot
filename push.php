@@ -37,30 +37,6 @@
 
    }
  }
-
- if($id==$idcheck2){
- if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3 hour
- {
-   $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
-  $idfree2 ='Cb2a0ab426f804a15c8233782ea28805d';
-
- }else{
-  $idfree2 ='Cb2a0ab426f804a15c8233782ea28805dddd';
-
-  $arrayPostData['to'] = $idcheck;
-  $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="แจ้งสมาชิก เรื่องการส่งเลขแบบพิเศษ
- ----------------------
- ระบบส่งเลขตามคำสั่ง Line จะเปิดให้บริการอีกครั้ง
- เวลา 09.00 น.-22.00 น. แต่ทางโปรแกรมอีซี่รอตโต้จะยังส่ง
- เลขยี่กี 1 สูตร ทุกๆ 15 นาที ตามปกติจ้า.
- ----------------------
- ขออภัยในความ..ไม่สะดวก";
-  pushMsg($arrayHeader,$arrayPostData);
-
- }
- }
-
 }
 
 
@@ -97,7 +73,7 @@ if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3
 
 
    if($message == "เลขปัก"){
-      if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile||$id==$idfree2){
+      if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-puk.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-puk.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -110,7 +86,7 @@ if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3
    }
 //&&$id==$idvip||$id==$idfree
    if($message == "เลขวิน"){
-      if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile||$id==$idfree2){
+      if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-win.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -123,7 +99,7 @@ if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3
    }
 
    if($message == "เลขเสียว"){
-      if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile||$id==$idfree2){
+      if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-seal.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-rood.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -136,7 +112,7 @@ if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3
    }
 
    if($message == "เลขรูด"){
-     if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile||$id==$idfree2){
+     if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-rood.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -149,7 +125,7 @@ if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3
    }
 
    if($message =="เลขไหล"){
-     if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile||$id==$idfree2){
+     if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/push-flow.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-flow.txt", "\xEF\xBB\xBF");
     // echo $content;
@@ -162,7 +138,7 @@ if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3
    }
 
    if($message=="เลขตอง"){
-     if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile||$id==$idfree2){
+     if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile){
      $requal = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/remind.php");
      $content = file_get_contents("http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-tong.txt", "\xEF\xBB\xBF");
     // echo $content;
