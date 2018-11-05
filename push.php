@@ -14,8 +14,8 @@
    $idcheck2='Cb2a0ab426f804a15c8233782ea28805d':
    date_default_timezone_set("Asia/Bangkok");
     $today=date("Y-m-d");
-    if($id==$idcheck){
     if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"){
+    if($id==$idcheck){
     if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3 hour
     {
       $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
@@ -39,8 +39,9 @@
  }
 }
 
-if($id==$idcheck2){
+
 if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"){
+if($id==$idcheck2){
 if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3 hour
 {
   $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
