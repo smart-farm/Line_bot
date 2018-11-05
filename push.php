@@ -40,7 +40,7 @@
 }
 
 
-if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"){
+/*if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"){
 if($id==$idcheck2){
 if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3 hour
 {
@@ -63,7 +63,7 @@ if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3
 
 }
 }
-}
+}*/
 
 
    $idsmile ='C701d3b84cd8afc5d2800f7b1b0f0b09c';
