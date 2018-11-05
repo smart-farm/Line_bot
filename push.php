@@ -10,7 +10,7 @@
    //รับ id ของผู้ใช้
    $id = $arrayJson['events'][0]['source']['groupId'];
    //$idsmile ='Cd8562369e04d45495e12c8c830ea3863';
-   //$checkid ="Cb2a0ab426f804a15c8233782ea28805d":
+   //$checkid ='Cb2a0ab426f804a15c8233782ea28805d':
    $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 
 
@@ -39,17 +39,17 @@
 
    }
  }
-
-/* if($id==$idcheckk){
+$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
+ if($id==$checkroom){
  if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3 hour
  {
    $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
   $idfree2 ='Cb2a0ab426f804a15c8233782ea28805d';
 
  }else{
-  $idfree2 ='Cb2a0ab426f804a15c8233782ea28805dddd';
+  $idfree2 ='Cb2a0ab426f804a15c8233782ea28805ddddd';
 
-  $arrayPostData['to'] = $idcheckk;
+  $arrayPostData['to'] = $checkroom;
   $arrayPostData['messages'][0]['type'] = "text";
   $arrayPostData['messages'][0]['text'] ="แจ้งสมาชิก เรื่องการส่งเลขแบบพิเศษ
  ----------------------
@@ -61,7 +61,7 @@
   pushMsg($arrayHeader,$arrayPostData);
 
  }
-}*/
+}
 
 }
 
