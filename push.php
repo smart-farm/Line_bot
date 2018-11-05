@@ -39,7 +39,7 @@
    }
  }
 
- if($id==$idcheckk){
+/* if($id==$idcheckk){
  if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3 hour
  {
    $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
@@ -60,7 +60,7 @@
   pushMsg($arrayHeader,$arrayPostData);
 
  }
- }
+}*/
 
 }
 
