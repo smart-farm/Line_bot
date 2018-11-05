@@ -11,7 +11,7 @@
    $id = $arrayJson['events'][0]['source']['groupId'];
    //$idsmile ='Cd8562369e04d45495e12c8c830ea3863';
    $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
-   //$idcheckk='Cb2a0ab426f804a15c8233782ea28805d':
+   $checkid='Cb2a0ab426f804a15c8233782ea28805d':
 
    date_default_timezone_set("Asia/Bangkok");
     $today=date("Y-m-d");
