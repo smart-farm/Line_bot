@@ -18,7 +18,7 @@
     $today=date("Y-m-d");
     if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"){
     if($id==$idcheck){
-    if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3 hour
+    if(time()>=strtotime("09:00:00")&& time()<strtotime("22:00:00")) // + 3 hour
     {
       $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
      $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
@@ -41,7 +41,7 @@
  }
 $checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
  if($id==$checkroom){
- if(time()>=strtotime("09:00:00")&& time()<strtotime("23:59:00 + 1 hour")) // + 3 hour
+ if(time()>=strtotime("09:00:00")&& time()<strtotime("22:00:00")) // + 3 hour
  {
    $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
   $idfree2 ='Cb2a0ab426f804a15c8233782ea28805d';
@@ -62,16 +62,11 @@ $checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
 
  }
 }
-
 }
-
-
 
    $idsmile ='C701d3b84cd8afc5d2800f7b1b0f0b09c';
    $idvip ='C22521a49473a70959e78d41650314a50';
    $id199 ='C678b1d0f7f216ba96cf8b6e784bac718';
-
-
 
    if($message == "เลขปัก"){
       if($id==$idvip||$id==$id199||$id==$idfree||$id==$idsmile||$id==$idfree2){
