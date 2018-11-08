@@ -13,7 +13,8 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 //$checkid ='Cb2a0ab426f804a15c8233782ea28805d':
 
 $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
-//$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
+$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
+$checkloop=['C6158fb947c96653e2706ce8eb2dbae9b','Cb2a0ab426f804a15c8233782ea28805d'];
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
  if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"){
@@ -22,13 +23,14 @@ date_default_timezone_set("Asia/Bangkok");
  {
   $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
   $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
-
+  $idfree2 ='Cb2a0ab426f804a15c8233782ea28805d';
 
 }else{
   $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
-
-
-  $arrayPostData['to'] = $idcheck;
+  $idfree2 ='Cb2a0ab426f804a15c8233782ea28805ddddd';
+for($i = 0; $i<count($checkloop);$i++) {
+  if($id==$checkloop[$i]){
+  $arrayPostData['to'] =$checkloop[$i];
   $arrayPostData['messages'][0]['type'] = "text";
   $arrayPostData['messages'][0]['text'] ="แจ้งสมาชิก เรื่องการส่งเลขแบบพิเศษ
 ----------------------
@@ -39,11 +41,13 @@ date_default_timezone_set("Asia/Bangkok");
 ขออภัยในความ..ไม่สะดวก
 เปิด 24 ชม. เฉพาะ Vip เท่านั้น";
   pushMsg($arrayHeader,$arrayPostData);
+  }
+}
 
 }
 }
-$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
-if($id==$checkroom){
+//$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
+/*if($id==$checkroom){
 if(time()>=strtotime("09:00:00")&& time()<strtotime("22:00:00")) // + 3 hour
 {
 $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
@@ -65,7 +69,7 @@ $arrayPostData['messages'][0]['text'] ="แจ้งสมาชิก เรื
 pushMsg($arrayHeader,$arrayPostData);
 
 }
-}
+}*/
 }
 
 //$id='C22521a49473a70959e78d41650314a50';
