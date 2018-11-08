@@ -80,9 +80,11 @@ $url1=["http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-win.txt","ht
 "http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-puk.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-flow.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-tong.txt"];
 $remove=["http://tornvidia.thddns.net:5152/easylotto/line-bot/del-win.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php",
 "http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-flow.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-tong.php"];
-for ($i = 0; $i<count($formula);$i++) {
+
+if($id==$idvip||$id==$id199||$id==$idfree||$id==$idadmin||$id==$idfree2){
+for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
-       if($id==$idvip||$id==$id199||$id==$idfree||$id==$idadmin||$id==$idfree2){
+
          $requal = file_get_contents($url[$i]);
          $content = file_get_contents($url1[$i], "\xEF\xBB\xBF");
           $arrayPostData['to'] = $id;
@@ -97,16 +99,14 @@ for ($i = 0; $i<count($formula);$i++) {
 
 $formula1 =["หวยรัฐบน","หวยรัฐล่าง"];
 $url2 =["http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto-in.txt"];
+if($id==$idvip||$id==$id199||$id==$idadmin){
 for ($i = 0; $i<count($formula1);$i++) {
     if($message==$formula1[$i]){
-       if($id==$idvip||$id==$id199||$id==$idadmin){
          $content = file_get_contents($url2[$i], "\xEF\xBB\xBF");
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
           $arrayPostData['messages'][0]['text'] = $content;
           pushMsg($arrayHeader,$arrayPostData);
-
-
       }
     }
 }
