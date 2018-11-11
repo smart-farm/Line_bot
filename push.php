@@ -76,6 +76,10 @@ pushMsg($arrayHeader,$arrayPostData);
 $idadmin ='C701d3b84cd8afc5d2800f7b1b0f0b09c';
 $idvip ='C22521a49473a70959e78d41650314a50';
 $id199 ='C678b1d0f7f216ba96cf8b6e784bac718';
+//ห้องใหม่
+$idvip1='Cfee29536f26d44c081fe4eeb08a5400e';
+$idvip2='Cd95550591ae6ca7084af635c0d822c59';
+
 $mess="หวยรัฐบน";
 $formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขไหล","เลขตอง"];
 $url =["http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-seal.php"
@@ -85,7 +89,7 @@ $url1=["http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-win.txt","ht
 $remove=["http://tornvidia.thddns.net:5152/easylotto/line-bot/del-win.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php",
 "http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-flow.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-tong.php"];
 
-if($id==$idvip||$id==$id199||$id==$idfree||$id==$idadmin){
+if($id==$idvip||$id==$id199||$id==$idfree||$id==$idadmin||$id==$idvip1||$id==$idvip2){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
@@ -103,7 +107,7 @@ for($i = 0; $i<count($formula);$i++) {
 
 $formula1 =["หวยรัฐบน","หวยรัฐล่าง"];
 $url2 =["http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto-in.txt"];
-if($id==$idvip||$id==$id199||$id==$idadmin){
+if($id==$idvip||$id==$id199||$id==$idadmin||$id==$idvip1||$id==$idvip2){
 for ($i = 0; $i<count($formula1);$i++) {
     if($message==$formula1[$i]){
          $content = file_get_contents($url2[$i], "\xEF\xBB\xBF");
