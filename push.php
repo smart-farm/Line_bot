@@ -19,7 +19,7 @@ date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
  if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"){
  if($id==$idcheck){
- if(time()>=strtotime("09:00:00")&& time()<strtotime("16:00:00")) // + 3 hour
+ if(time()>=strtotime("09:00:00")&& time()<strtotime("22:00:00")) // + 3 hour
  {
   $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
   $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
@@ -40,9 +40,7 @@ date_default_timezone_set("Asia/Bangkok");
 4. จากนั้นเติมเงินเข้าเจสขั้นต่ำ 500 บาท
 5. แคปหน้าจอการเติมเงิน ส่งมาที่ Line ID : ohopc หรือ tor_nvidia-amd
 6. แจ้งเบอร์ของท่านกับแอตมิน เพื่อเข้าใช้งานโปรแกรมอีซีรอตโต้
-7. หากเครดิตท่านไม่เดินเป็นเวลานาน ทางทีมงานขออนุญาตเชิญออก
-
-";
+7. หากเครดิตท่านไม่เดินเป็นเวลานาน ทางทีมงานขออนุญาตเชิญออก";
 
   pushMsg($arrayHeader,$arrayPostData);
 
