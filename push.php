@@ -99,7 +99,7 @@ $url1=["http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-win.txt","ht
 $remove=["http://tornvidia.thddns.net:5152/easylotto/line-bot/del-win.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php",
 "http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-flow.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-tong.php"];
 
-if($id==$id199||$id==$idfree||$id==$idadmin||$id==$idvip1||$id==$idvip2){
+if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
