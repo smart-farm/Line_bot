@@ -103,13 +103,20 @@ for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
          $requal = file_get_contents($url[$i]);
+         if(file_get_contents($url[$i])!=""){
          $content = file_get_contents($url1[$i], "\xEF\xBB\xBF");
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
           $arrayPostData['messages'][0]['text'] = $content;
           pushMsg($arrayHeader,$arrayPostData);
          $requal = file_get_contents($remove[$i]);
+}else{
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ";
+  pushMsg($arrayHeader,$arrayPostData);
 
+}
       }
     }
 }
