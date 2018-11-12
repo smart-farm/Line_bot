@@ -103,7 +103,7 @@ for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
          $requal = file_get_contents($url[$i]);
-         if(file_get_contents($url[$i])!=""){
+         if($requal!=""){
          $content = file_get_contents($url1[$i], "\xEF\xBB\xBF");
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
