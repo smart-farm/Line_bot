@@ -82,7 +82,7 @@ $idvip1='Cfee29536f26d44c081fe4eeb08a5400e';
 $idvip2='Cd95550591ae6ca7084af635c0d822c59';
 
 //$mess="หวยรัฐบน";
-$formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขไหล","เลขตอง","เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"];
+$formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขไหล","เลขตอง"]; //,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
 $url =["http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-seal.php"
 ,"http://tornvidia.thddns.net:5152/easylotto/line-bot/push-puk.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-flow.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/remind.php"
 ,"http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win-on.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win-lower.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood-on.php"
