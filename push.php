@@ -83,20 +83,20 @@ $idvip2='Cd95550591ae6ca7084af635c0d822c59';
 
 //$mess="หวยรัฐบน";
 $formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขไหล","เลขตอง","เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"]; //,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
-$url =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.com/line-bot/push-rood.php","http://www.phonenana.com/line-bot/push-seal.php"
-,"http://www.phonenana.com/line-bot/push-puk.php","http://www.phonenana.com/line-bot/push-flow.php","http://www.phonenana.com/line-bot/remind.php"
-,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
+$url =["http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-seal.php"
+,"http://tornvidia.thddns.net:5152/easylotto/line-bot/push-puk.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-flow.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/remind.php"
+,"http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win-on.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-win-lower.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood-on.php"
 ,"http://tornvidia.thddns.net:5152/easylotto/line-bot/push-rood-lower.php"];
 
-$url1=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt","http://www.phonenana.com/line-bot/reviews-rood.txt",
-"http://www.phonenana.com/line-bot/reviews-puk.txt","http://www.phonenana.com/line-bot/reviews-flow.txt","http://www.phonenana.com/line-bot/reviews-tong.txt"
-,"http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt"
+$url1=["http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-win.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-rood.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-rood.txt",
+"http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-puk.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-flow.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-tong.txt"
+,"http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-win.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-win.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-rood.txt"
 ,"http://tornvidia.thddns.net:5152/easylotto/line-bot/reviews-rood.txt"];
 
-$remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-rood.php",
-"http://www.phonenana.com/line-bot/del-bot.php","http://www.phonenana.com/line-bot/del-flow.php","http://www.phonenana.com/line-bot/del-tong.php",
-"http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
-,"http://www.phonenana.com/line-bot/del-rood.php"];
+$remove=["http://tornvidia.thddns.net:5152/easylotto/line-bot/del-win.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php",
+"http://tornvidia.thddns.net:5152/easylotto/line-bot/del-bot.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-flow.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-tong.php",
+"http://tornvidia.thddns.net:5152/easylotto/line-bot/del-win.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-win.php","http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php"
+,"http://tornvidia.thddns.net:5152/easylotto/line-bot/del-rood.php"];
 
 if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 for($i = 0; $i<count($formula);$i++) {
