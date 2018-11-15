@@ -19,7 +19,7 @@ date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
  if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"||$message=="เลขมัดบน"||$message=="เลขมัดล่าง"){
  if($id==$idcheck){
- if(time()>=strtotime("09:00:00")&& time()<strtotime("00:00:00 + 4 hour")) // 
+ if(time()>=strtotime("09:00:00")&& time()<strtotime("00:00:00 + 4 hour")) //
  {
   $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
   $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
@@ -32,15 +32,17 @@ date_default_timezone_set("Asia/Bangkok");
   //if($id==$checkloop[$i]){
   $arrayPostData['to'] =$id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="การเข้าใช้บริการแอพอีซีรอตโต้
+  $arrayPostData['messages'][0]['text'] ="เปิดรับสมาชิก VIP แบบฟรี Huay.com
 ============
-1. สมัครผ่านลิงค์ของเราก่อนถึงเข้าใช้งานได้
-2. โดยสมัครลิงค์ได้ที่นี่ : http://bit.ly/membervip_free
-3. สมัครสมาชิกเจสด้วย ชื่อสมาชิกใหม่/เบอร์เดิม/บัญชีธนาคารเดิม
-4. จากนั้นเติมเงินเข้าเจสขั้นต่ำ 500 บาท
-5. แคปหน้าจอการเติมเงิน ส่งมาที่ Line ID : ohopc หรือ tor_nvidia-amd
-6. แจ้งเบอร์ของท่านกับแอตมิน เพื่อเข้าใช้งานโปรแกรมอีซีรอตโต้
-7. หากเครดิตท่านไม่เดินเป็นเวลานาน ทางทีมงานขออนุญาตเชิญออก";
+เว็บแทงพนัน Huay.com บาทเดียวก็แทงได้!
+ใช้ผลการแทงพนันเดียวกันกับเจส ท่านสามารถ
+เข้าห้อง VIP ได้และได้ใช้โปรแกรมคำนวณด้วย
+1.สมัครผ่านลิงค์ที่นี่ : http://bit.ly/huay-member
+2.จากนั้นเติมเงินเข้า Huay.com ขั้นต่ำ 500 บาท
+3.แคปหน้าจอหลักฐานการเติมเงินส่งมาที่ไลน์ : OHOPC
+4.แจ้งเบอร์กับแอตเพื่อเข้าใช้งานโปรแกรมอีซี-ล็อตโต้
+5.หากเครดิตท่านไม่เดินเป็นเวลานาน..เชิญออก
+";
 
   pushMsg($arrayHeader,$arrayPostData);
 
