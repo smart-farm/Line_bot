@@ -17,7 +17,7 @@ $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 //$checkloop=['C6158fb947c96653e2706ce8eb2dbae9b','Cb2a0ab426f804a15c8233782ea28805d'];
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
- if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"){
+ if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"||$message=="เลขมัดบน"||$message=="เลขมัดล่าง"){
  if($id==$idcheck){
  if(time()>=strtotime("09:00:00")&& time()<strtotime("22:00:00")) // + 3 hour
  {
@@ -98,7 +98,7 @@ $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.c
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
 ,"http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-mux-on.php","http://www.phonenana.com/line-bot/del-mux-lo.php"];
 
-if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
+if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin||$id==$idfree){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
