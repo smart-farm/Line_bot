@@ -15,7 +15,8 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 //$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
 //$checkloop=['C6158fb947c96653e2706ce8eb2dbae9b','Cb2a0ab426f804a15c8233782ea28805d'];
-date_default_timezone_set("Asia/Bangkok");
+$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+/*date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
  if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"||$message=="เลขมัดบน"||$message=="เลขมัดล่าง"){
  if($id==$idcheck){
@@ -47,31 +48,7 @@ date_default_timezone_set("Asia/Bangkok");
 
 }
 }
-//$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
-/*if($id==$checkroom){
-if(time()>=strtotime("09:00:00")&& time()<strtotime("22:00:00")) // + 3 hour
-{
-$today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
-$idfree2 ='Cb2a0ab426f804a15c8233782ea28805d';
-
-}else{
-$idfree2 ='Cb2a0ab426f804a15c8233782ea28805ddddd';
-
-$arrayPostData['to'] = $checkroom;
-$arrayPostData['messages'][0]['type'] = "text";
-$arrayPostData['messages'][0]['text'] ="แจ้งสมาชิก เรื่องการส่งเลขแบบพิเศษ
-----------------------
-ระบบส่งเลขตามคำสั่ง Line จะเปิดให้บริการอีกครั้ง
-เวลา 09.00 น.-22.00 น. แต่ทางโปรแกรมอีซี่รอตโต้จะยังส่ง
-เลขยี่กี 1 สูตร ทุกๆ 15 นาที ตามปกติจ้า.
-----------------------
-ขออภัยในความ..ไม่สะดวก
-เปิด 24 ชม. เฉพาะ Vip เท่านั้น";
-pushMsg($arrayHeader,$arrayPostData);
-
-}
 }*/
-}
 
 //$id='C22521a49473a70959e78d41650314a50';
 $idadmin ='C701d3b84cd8afc5d2800f7b1b0f0b09c';
