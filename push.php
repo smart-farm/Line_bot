@@ -19,7 +19,7 @@ date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
  if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"||$message=="เลขมัดบน"||$message=="เลขมัดล่าง"){
  if($id==$idcheck){
- if(time()>=strtotime("09:00:00")&& time()<strtotime("22:00:00")) // + 3 hour
+ if(time()>=strtotime("09:00:00")&& time()<strtotime("00:00:00 + 4 hour")) // 
  {
   $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
   $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
