@@ -117,7 +117,7 @@ $remove1=["http://www.phonenana.com/line-bot/del-flow.php","http://www.phonenana
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
 ,"http://www.phonenana.com/line-bot/del-rood.php"*/
-if($id!=$idfree){
+if($id!=$idfree && $message=="เลขไหล" && $message=="เลขตอง" && $message=="เลขมัดบน" && $message=="เลขมัดล่าง"){
 if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 
 for($i = 0; $i<count($formula1);$i++) {
@@ -147,10 +147,11 @@ for($i = 0; $i<count($formula1);$i++) {
   }else {
     $arrayPostData['to'] = $id;
     $arrayPostData['messages'][0]['type'] = "text";
-    $arrayPostData['messages'][0]['text'] ="เฉพาะ vip เท่านั้น สมัครสมาชิกกดที่นี้ :http://www.phonenana.com";
-    $arrayPostData['messages'][1]['type'] = "sticker";
-    $arrayPostData['messages'][1]['packageId'] = "2";
-    $arrayPostData['messages'][1]['stickerId'] = "34";
+    $arrayPostData['messages'][0]['text'] ="เฉพาะ vip เท่านั้น สมัครสมาชิกกดที่นี้
+    :http://www.phonenana.com";
+    //$arrayPostData['messages'][1]['type'] = "sticker";
+    //$arrayPostData['messages'][1]['packageId'] = "2";
+    //$arrayPostData['messages'][1]['stickerId'] = "34";
     pushMsg($arrayHeader,$arrayPostData);
 }
 
