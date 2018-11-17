@@ -120,7 +120,7 @@ $remove1=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.
 "http://www.phonenana.com/line-bot/del-bot.php"];
 
 if($id==$idfree){
-for($i = 0; $i<count($formula);$i++) {
+for($i = 0; $i<count($formula1);$i++) {
     if($message==$formula1[$i]){
 
          $requal = file_get_contents($url2[$i]);
@@ -141,19 +141,19 @@ for($i = 0; $i<count($formula);$i++) {
   pushMsg($arrayHeader,$arrayPostData);
 
 }
-}if($message==$formula2[$i]){
+}
+}
+  for($i = 0; $i<count($formula2);$i++) {
+    if($message==$formula2[$i]){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] ="เฉพาะ Vip เท่านั้น สมัครคลิกที่นี้
+    http://www.phonenana.com";
+      pushMsg($arrayHeader,$arrayPostData);
+          }
 
-  $arrayPostData['to'] = $id;
-  $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="เฉพาะ Vip เท่านั้น สมัครคลิกที่นี้
-http://www.phonenana.com";
-//  $arrayPostData['messages'][1]['type'] = "sticker";
-//  $arrayPostData['messages'][1]['packageId'] = "2";
-//  $arrayPostData['messages'][1]['stickerId'] = "34";
-  pushMsg($arrayHeader,$arrayPostData);
-      }
 
-    }
+  }
 }
 
 
