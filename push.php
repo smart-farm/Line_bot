@@ -78,7 +78,7 @@ $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.c
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
 ,"http://www.phonenana.com/line-bot/del-rood.php"*/
-if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin||$id==$idfree){
+if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
@@ -103,6 +103,57 @@ for($i = 0; $i<count($formula);$i++) {
       }
     }
 }
+
+$formula2 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก"];
+$formula3 =["เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง","หวยรัฐบน","หวยรัฐล่าง"];
+$url3 =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.com/line-bot/push-rood.php","http://www.phonenana.com/line-bot/push-seal.php"
+,"http://www.phonenana.com/line-bot/push-puk.php"];
+
+
+$url4=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt","http://www.phonenana.com/line-bot/reviews-rood.txt",
+"http://www.phonenana.com/line-bot/reviews-puk.txt"];
+
+
+$remove1=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-rood.php",
+"http://www.phonenana.com/line-bot/del-bot.php"];
+
+if($id==$idfree){
+for($i = 0; $i<count($formula2);$i++) {
+    if($message==$formula2[$i]){
+
+         $requal = file_get_contents($url3[$i]);
+         if($requal!=""){
+         $content = file_get_contents($url4[$i], "\xEF\xBB\xBF");
+          $arrayPostData['to'] = $id;
+          $arrayPostData['messages'][0]['type'] = "text";
+          $arrayPostData['messages'][0]['text'] = $content;
+          pushMsg($arrayHeader,$arrayPostData);
+         $requal = file_get_contents($remove1[$i]);
+}else{
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://www.phonenana.com";
+  $arrayPostData['messages'][1]['type'] = "sticker";
+  $arrayPostData['messages'][1]['packageId'] = "2";
+  $arrayPostData['messages'][1]['stickerId'] = "34";
+  pushMsg($arrayHeader,$arrayPostData);
+
+}
+}
+}
+  for($i = 0; $i<count($formula3);$i++) {
+    if($message==$formula3[$i]){
+      $arrayPostData['to'] = $id;
+      $arrayPostData['messages'][0]['type'] = "text";
+      $arrayPostData['messages'][0]['text'] ="เฉพาะ Vip เท่านั้น สมัครคลิกที่นี้
+    http://www.phonenana.com";
+      pushMsg($arrayHeader,$arrayPostData);
+          }
+
+
+  }
+}
+
 
 $formula1 =["หวยรัฐบน","หวยรัฐล่าง"];
 $url2 =["http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto-in.txt"];
