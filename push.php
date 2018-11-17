@@ -15,12 +15,12 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 //$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
 //$checkloop=['C6158fb947c96653e2706ce8eb2dbae9b','Cb2a0ab426f804a15c8233782ea28805d'];
-$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
-/*date_default_timezone_set("Asia/Bangkok");
+//$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
  if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"||$message=="เลขมัดบน"||$message=="เลขมัดล่าง"){
  if($id==$idcheck){
- if(time()>=strtotime("09:00:00")&& time()<strtotime("00:00:00 + 4 hour")) //
+ if(time()>=strtotime("09:00:00")&& time()<strtotime("00:00:00 + 3 hour"))
  {
   $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
   $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
@@ -28,9 +28,7 @@ $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
 
 }else{
   $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
-  //$idfree2 ='Cb2a0ab426f804a15c8233782ea28805ddddd';
-//for($i = 0; $i<count($checkloop);$i++) {
-  //if($id==$checkloop[$i]){
+
   $arrayPostData['to'] =$id;
   $arrayPostData['messages'][0]['type'] = "text";
   $arrayPostData['messages'][0]['text'] ="การเข้าใช้บริการแอพอีซีรอตโต้
@@ -48,7 +46,7 @@ $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
 
 }
 }
-}*/
+}
 
 //$id='C22521a49473a70959e78d41650314a50';
 $idadmin ='C701d3b84cd8afc5d2800f7b1b0f0b09c';
@@ -59,22 +57,26 @@ $idvip1='Cfee29536f26d44c081fe4eeb08a5400e';
 $idvip2='Cd95550591ae6ca7084af635c0d822c59';
 
 //$mess="หวยรัฐบน";
-$formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขไหล","เลขตอง","เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง","เลขมัดบน","เลขมัดล่าง"]; //,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
+$formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
 $url =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.com/line-bot/push-rood.php","http://www.phonenana.com/line-bot/push-seal.php"
-,"http://www.phonenana.com/line-bot/push-puk.php","http://www.phonenana.com/line-bot/push-flow.php","http://www.phonenana.com/line-bot/remind.php"
-,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
-,"http://www.phonenana.com/line-bot/push-rood-lower.php","http://www.phonenana.com/line-bot/yeekee-bundle.php","http://www.phonenana.com/line-bot/yeekee-bundle-lo.php"];
+,"http://www.phonenana.com/line-bot/push-puk.php","http://www.phonenana.com/line-bot/push-flow.php","http://www.phonenana.com/line-bot/remind.php",
+"http://www.phonenana.com/line-bot/yeekee-bundle.php","http://www.phonenana.com/line-bot/yeekee-bundle-lo.php"];
+/*,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
+,"http://www.phonenana.com/line-bot/push-rood-lower.php",*/
 
 $url1=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt","http://www.phonenana.com/line-bot/reviews-rood.txt",
 "http://www.phonenana.com/line-bot/reviews-puk.txt","http://www.phonenana.com/line-bot/reviews-flow.txt","http://www.phonenana.com/line-bot/reviews-tong.txt"
-,"http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt"
-,"http://www.phonenana.com/line-bot/reviews-rood.txt","http://www.phonenana.com/line-bot/reviews-on.txt","http://www.phonenana.com/line-bot/reviews-lo.txt"];
+,"http://www.phonenana.com/line-bot/reviews-on.txt","http://www.phonenana.com/line-bot/reviews-lo.txt"];
+/*,"http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt"
+,"http://www.phonenana.com/line-bot/reviews-rood.txt"*/
 
 $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-rood.php",
 "http://www.phonenana.com/line-bot/del-bot.php","http://www.phonenana.com/line-bot/del-flow.php","http://www.phonenana.com/line-bot/del-tong.php",
-"http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
-,"http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-mux-on.php","http://www.phonenana.com/line-bot/del-mux-lo.php"];
+"http://www.phonenana.com/line-bot/del-mux-on.php","http://www.phonenana.com/line-bot/del-mux-lo.php"];
 
+/*,
+"http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
+,"http://www.phonenana.com/line-bot/del-rood.php"*/
 if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin||$id==$idfree){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
