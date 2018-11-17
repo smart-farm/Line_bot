@@ -148,7 +148,7 @@ for($i = 0; $i<count($formula1);$i++) {
     $arrayPostData['to'] = $id;
     $arrayPostData['messages'][0]['type'] = "text";
     $arrayPostData['messages'][0]['text'] ="เฉพาะ vip เท่านั้น สมัครสมาชิกกดที่นี้
-    :http://www.phonenana.com";
+http://www.phonenana.com";
     //$arrayPostData['messages'][1]['type'] = "sticker";
     //$arrayPostData['messages'][1]['packageId'] = "2";
     //$arrayPostData['messages'][1]['stickerId'] = "34";
