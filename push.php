@@ -117,7 +117,7 @@ $remove1=["http://www.phonenana.com/line-bot/del-flow.php","http://www.phonenana
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
 ,"http://www.phonenana.com/line-bot/del-rood.php"*/
-if($id==$idfree){
+if($id!=$idfree){
 if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 
 for($i = 0; $i<count($formula1);$i++) {
