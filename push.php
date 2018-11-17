@@ -58,19 +58,22 @@ $idvip1='Cfee29536f26d44c081fe4eeb08a5400e';
 $idvip2='Cd95550591ae6ca7084af635c0d822c59';
 
 //$mess="หวยรัฐบน";
-$formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
+$formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
 $url =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.com/line-bot/push-rood.php","http://www.phonenana.com/line-bot/push-seal.php"
-,"http://www.phonenana.com/line-bot/push-puk.php"];
+,"http://www.phonenana.com/line-bot/push-puk.php","http://www.phonenana.com/line-bot/push-flow.php","http://www.phonenana.com/line-bot/remind.php",
+"http://www.phonenana.com/line-bot/yeekee-bundle.php","http://www.phonenana.com/line-bot/yeekee-bundle-lo.php"];
 /*,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
 ,"http://www.phonenana.com/line-bot/push-rood-lower.php",*/
 
 $url1=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt","http://www.phonenana.com/line-bot/reviews-rood.txt",
-"http://www.phonenana.com/line-bot/reviews-puk.txt"];
+"http://www.phonenana.com/line-bot/reviews-puk.txt","http://www.phonenana.com/line-bot/reviews-flow.txt","http://www.phonenana.com/line-bot/reviews-tong.txt"
+,"http://www.phonenana.com/line-bot/reviews-on.txt","http://www.phonenana.com/line-bot/reviews-lo.txt"];
 /*,"http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt"
 ,"http://www.phonenana.com/line-bot/reviews-rood.txt"*/
 
 $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-rood.php",
-"http://www.phonenana.com/line-bot/del-bot.php"];
+"http://www.phonenana.com/line-bot/del-bot.php","http://www.phonenana.com/line-bot/del-flow.php","http://www.phonenana.com/line-bot/del-tong.php",
+"http://www.phonenana.com/line-bot/del-mux-on.php","http://www.phonenana.com/line-bot/del-mux-lo.php"];
 
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
@@ -100,62 +103,6 @@ for($i = 0; $i<count($formula);$i++) {
       }
     }
 }
-$formula1 =["เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
-$url3 =["http://www.phonenana.com/line-bot/push-flow.php","http://www.phonenana.com/line-bot/remind.php",
-"http://www.phonenana.com/line-bot/yeekee-bundle.php","http://www.phonenana.com/line-bot/yeekee-bundle-lo.php"];
-/*,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
-,"http://www.phonenana.com/line-bot/push-rood-lower.php",*/
-
-$url4=["http://www.phonenana.com/line-bot/reviews-flow.txt","http://www.phonenana.com/line-bot/reviews-tong.txt"
-,"http://www.phonenana.com/line-bot/reviews-on.txt","http://www.phonenana.com/line-bot/reviews-lo.txt"];
-/*,"http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt"
-,"http://www.phonenana.com/line-bot/reviews-rood.txt"*/
-
-$remove1=["http://www.phonenana.com/line-bot/del-flow.php","http://www.phonenana.com/line-bot/del-tong.php",
-"http://www.phonenana.com/line-bot/del-mux-on.php","http://www.phonenana.com/line-bot/del-mux-lo.php"];
-
-/*,
-"http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
-,"http://www.phonenana.com/line-bot/del-rood.php"*/
-if($id!=$idfree && $message=="เลขไหล" && $message=="เลขตอง" && $message=="เลขมัดบน" && $message=="เลขมัดล่าง"){
-if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
-
-for($i = 0; $i<count($formula1);$i++) {
-    if($message==$formula1[$i]){
-
-         $requal = file_get_contents($url3[$i]);
-         if($requal!=""){
-         $content = file_get_contents($url4[$i], "\xEF\xBB\xBF");
-          $arrayPostData['to'] = $id;
-          $arrayPostData['messages'][0]['type'] = "text";
-          $arrayPostData['messages'][0]['text'] = $content;
-          pushMsg($arrayHeader,$arrayPostData);
-         $requal = file_get_contents($remove1[$i]);
-}else{
-  $arrayPostData['to'] = $id;
-  $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://www.phonenana.com";
-  $arrayPostData['messages'][1]['type'] = "sticker";
-  $arrayPostData['messages'][1]['packageId'] = "2";
-  $arrayPostData['messages'][1]['stickerId'] = "34";
-  pushMsg($arrayHeader,$arrayPostData);
-
-}
-      }
-    }
-  }
-  }else {
-    $arrayPostData['to'] = $id;
-    $arrayPostData['messages'][0]['type'] = "text";
-    $arrayPostData['messages'][0]['text'] ="เฉพาะ vip เท่านั้น สมัครสมาชิกกดที่นี้
-http://www.phonenana.com";
-    //$arrayPostData['messages'][1]['type'] = "sticker";
-    //$arrayPostData['messages'][1]['packageId'] = "2";
-    //$arrayPostData['messages'][1]['stickerId'] = "34";
-    pushMsg($arrayHeader,$arrayPostData);
-}
-
-
 
 $formula1 =["หวยรัฐบน","หวยรัฐล่าง"];
 $url2 =["http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto-in.txt"];
