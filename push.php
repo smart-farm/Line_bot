@@ -101,12 +101,12 @@ for($i = 0; $i<count($formula);$i++) {
     }
 }
 $formula1 =["เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
-$url1 =["http://www.phonenana.com/line-bot/push-flow.php","http://www.phonenana.com/line-bot/remind.php",
+$url3 =["http://www.phonenana.com/line-bot/push-flow.php","http://www.phonenana.com/line-bot/remind.php",
 "http://www.phonenana.com/line-bot/yeekee-bundle.php","http://www.phonenana.com/line-bot/yeekee-bundle-lo.php"];
 /*,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
 ,"http://www.phonenana.com/line-bot/push-rood-lower.php",*/
 
-$url2=["http://www.phonenana.com/line-bot/reviews-flow.txt","http://www.phonenana.com/line-bot/reviews-tong.txt"
+$url4=["http://www.phonenana.com/line-bot/reviews-flow.txt","http://www.phonenana.com/line-bot/reviews-tong.txt"
 ,"http://www.phonenana.com/line-bot/reviews-on.txt","http://www.phonenana.com/line-bot/reviews-lo.txt"];
 /*,"http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt"
 ,"http://www.phonenana.com/line-bot/reviews-rood.txt"*/
@@ -123,9 +123,9 @@ if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 for($i = 0; $i<count($formula1);$i++) {
     if($message==$formula1[$i]){
 
-         $requal = file_get_contents($url2[$i]);
+         $requal = file_get_contents($url3[$i]);
          if($requal!=""){
-         $content = file_get_contents($url2[$i], "\xEF\xBB\xBF");
+         $content = file_get_contents($url4[$i], "\xEF\xBB\xBF");
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
           $arrayPostData['messages'][0]['text'] = $content;
