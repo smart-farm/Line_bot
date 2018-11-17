@@ -146,10 +146,10 @@ for($i = 0; $i<count($formula);$i++) {
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
   $arrayPostData['messages'][0]['text'] ="เฉพาะ Vip เท่านั้น สมัครคลิกที่นี้
-  http://www.phonenana.com";
-  $arrayPostData['messages'][1]['type'] = "sticker";
-  $arrayPostData['messages'][1]['packageId'] = "2";
-  $arrayPostData['messages'][1]['stickerId'] = "34";
+http://www.phonenana.com";
+//  $arrayPostData['messages'][1]['type'] = "sticker";
+//  $arrayPostData['messages'][1]['packageId'] = "2";
+//  $arrayPostData['messages'][1]['stickerId'] = "34";
   pushMsg($arrayHeader,$arrayPostData);
       }
 
