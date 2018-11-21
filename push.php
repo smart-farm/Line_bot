@@ -58,7 +58,7 @@ $id199 ='C678b1d0f7f216ba96cf8b6e784bac718';
 $idvip1='Cfee29536f26d44c081fe4eeb08a5400e';
 $idvip2='Cd95550591ae6ca7084af635c0d822c59';
 
-//$mess="หวยรัฐบน";
+
 $formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง","เลขรูดบน","เลขรูดล่าง"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
 $url =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.com/line-bot/push-rood.php","http://www.phonenana.com/line-bot/push-seal.php"
 ,"http://www.phonenana.com/line-bot/push-puk.php","http://www.phonenana.com/line-bot/push-flow.php","http://www.phonenana.com/line-bot/remind.php",
@@ -82,6 +82,7 @@ $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.c
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
 ,"http://www.phonenana.com/line-bot/del-rood.php"*/
+sleep(5);
 if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
