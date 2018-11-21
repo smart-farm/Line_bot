@@ -82,7 +82,7 @@ $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.c
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
 ,"http://www.phonenana.com/line-bot/del-rood.php"*/
-sleep(3);
+sleep(2);
 if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
