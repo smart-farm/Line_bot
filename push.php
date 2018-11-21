@@ -172,9 +172,9 @@ for ($i = 0; $i<count($formula1);$i++) {
     }
 }
 
-if($message=="Gettoken"){
-
-header("Location:http://phonenana.com/line-bot/get-token.php?id=$id");
+if($message == "gettoken"){
+$content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id");
+//header("Location:http://phonenana.com/line-bot/get-token.php?id=$id");
 
 
 }
