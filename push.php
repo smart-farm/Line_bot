@@ -16,6 +16,7 @@ $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 //$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
 //$checkloop=['C6158fb947c96653e2706ce8eb2dbae9b','Cb2a0ab426f804a15c8233782ea28805d'];
 $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+$idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
@@ -120,7 +121,7 @@ $url4=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana
 $remove1=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-rood.php",
 "http://www.phonenana.com/line-bot/del-bot.php"];
 
-if($id==$idfree){
+if($id==$idfree||$id==$idfree2){
 for($i = 0; $i<count($formula2);$i++) {
     if($message==$formula2[$i]){
 
