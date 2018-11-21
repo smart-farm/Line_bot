@@ -172,6 +172,14 @@ for ($i = 0; $i<count($formula1);$i++) {
     }
 }
 
+if($message=="Gettoken"){
+
+header("Location:http://phonenana.com/line-bot/get-token.php?id=$id");
+
+
+}
+
+
 function pushMsg($arrayHeader,$arrayPostData){
    $strUrl = "https://api.line.me/v2/bot/message/push";
    $ch = curl_init();
