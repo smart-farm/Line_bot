@@ -110,7 +110,7 @@ for($i = 0; $i<count($formula);$i++) {
 }
 
 $formula2 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก"];
-$formula3 =["เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง","หวยรัฐบน","หวยรัฐล่าง","เลขรูดบน","เลขรูดล่าง","เลขวินบน","เลขวินล่าง"];
+$formula3 =["เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง","หวยรัฐบน","หวยรัฐล่าง","เลขรูดบน","เลขรูดล่าง","เลขวินบน","เลขวินล่าง","วินบน"];
 $url3 =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.com/line-bot/push-rood.php","http://www.phonenana.com/line-bot/push-seal.php"
 ,"http://www.phonenana.com/line-bot/push-puk.php"];
 
