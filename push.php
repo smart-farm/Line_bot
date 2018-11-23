@@ -63,7 +63,7 @@ $formula =["เลขวิน","เลขรูด","เลขเสียว",
 $url =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.com/line-bot/push-rood.php","http://www.phonenana.com/line-bot/push-seal.php"
 ,"http://www.phonenana.com/line-bot/push-puk.php","http://www.phonenana.com/line-bot/push-flow.php","http://www.phonenana.com/line-bot/remind.php",
 "http://www.phonenana.com/line-bot/yeekee-bundle.php","http://www.phonenana.com/line-bot/yeekee-bundle-lo.php","http://www.phonenana.com/line-bot/push-rood-on.php"
-,"http://www.phonenana.com/line-bot/push-rood-lower.php","",""];
+,"http://www.phonenana.com/line-bot/push-rood-lower.php","http://www.phonenana.com","http://www.phonenana.com"];
 /*,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
 ,*/
 
@@ -77,7 +77,7 @@ $url1=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana
 $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-rood.php",
 "http://www.phonenana.com/line-bot/del-bot.php","http://www.phonenana.com/line-bot/del-flow.php","http://www.phonenana.com/line-bot/del-tong.php",
 "http://www.phonenana.com/line-bot/del-mux-on.php","http://www.phonenana.com/line-bot/del-mux-lo.php","http://www.phonenana.com/line-bot/del-rood.php"
-,"http://www.phonenana.com/line-bot/del-rood.php","",""];
+,"http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com","http://www.phonenana.com"];
 
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
