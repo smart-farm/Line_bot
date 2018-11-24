@@ -60,14 +60,15 @@ $idvip2='Cd95550591ae6ca7084af635c0d822c59';
 //,"http://www.phonenana.com/line-bot/push-flow.php"
 
 $formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขตอง","เลขมัดบน","เลขมัดล่าง","เลขรูดบน","เลขรูดล่าง","หวยรัฐบน","หวยรัฐล่าง","วินบน","วินล่าง","รูดบน","รูดล่าง","รูดบนล่าง","ปักสิบบน","ปักหน่วยบน"
-,"ปักสิบล่าง","ปักหน่วยล่าง"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
+,"ปักสิบล่าง","ปักหน่วยล่าง","ผล"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
 $url =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.com/line-bot/push-rood.php","http://www.phonenana.com/line-bot/push-seal.php"
 ,"http://www.phonenana.com/line-bot/push-puk.php","http://www.phonenana.com/line-bot/remind.php",
 "http://www.phonenana.com/line-bot/yeekee-bundle.php","http://www.phonenana.com/line-bot/yeekee-bundle-lo.php","http://www.phonenana.com/line-bot/push-rood-on.php"
 ,"http://www.phonenana.com/line-bot/push-rood-lower.php","http://www.phonenana.com","http://www.phonenana.com","http://www.phonenana.com/line-bot/line_winon.php?formula=wh"
 ,"http://www.phonenana.com/line-bot/line_winon.php?formula=wl","http://www.phonenana.com/line-bot/line_winon.php?formula=rh","http://www.phonenana.com/line-bot/line_winon.php?formula=rl"
 ,"http://www.phonenana.com/line-bot/line_winon.php?formula=rhl","http://www.phonenana.com/line-bot/line_winon.php?formula=ph1"
-,"http://www.phonenana.com/line-bot/line_winon.php?formula=ph2","http://www.phonenana.com/line-bot/line_winon.php?formula=pl0","http://www.phonenana.com/line-bot/line_winon.php?formula=pl1"];
+,"http://www.phonenana.com/line-bot/line_winon.php?formula=ph2","http://www.phonenana.com/line-bot/line_winon.php?formula=pl0","http://www.phonenana.com/line-bot/line_winon.php?formula=pl1"
+,"http://www.phonenana.com"];
 /*,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
 ,*/
 //"http://www.phonenana.com/line-bot/reviews-flow.txt",
@@ -77,7 +78,8 @@ $url1=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana
 "http://www.phonenana.com/line-bot/reviews-rood.txt","http://www.phonenana.com/line-bot/lotto.txt","http://www.phonenana.com/line-bot/lotto-in.txt"
 ,"http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt",
 "http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt"
-,"http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt"];
+,"http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt"
+,"http://www.phonenana.com/line-bot/Test.txt"];
 /*,"http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt"
 ,"http://www.phonenana.com/line-bot/reviews-rood.txt"*/
 //"http://www.phonenana.com/line-bot/del-flow.php",
@@ -87,7 +89,7 @@ $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.c
 ,"http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com","http://www.phonenana.com","http://www.phonenana.com/line-bot/del-winon.php"
 ,"http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php"
 ,"http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php"
-,"http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php"];
+,"http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com"];
 
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
