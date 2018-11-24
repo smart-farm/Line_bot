@@ -72,7 +72,7 @@ $url1=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana
 "http://www.phonenana.com/line-bot/reviews-puk.txt","http://www.phonenana.com/line-bot/reviews-flow.txt","http://www.phonenana.com/line-bot/reviews-tong.txt"
 ,"http://www.phonenana.com/line-bot/reviews-on.txt","http://www.phonenana.com/line-bot/reviews-lo.txt","http://www.phonenana.com/line-bot/reviews-rood.txt",
 "http://www.phonenana.com/line-bot/reviews-rood.txt","http://www.phonenana.com/line-bot/lotto.txt","http://www.phonenana.com/line-bot/lotto-in.txt"
-,"http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt",,"http://www.phonenana.com/line-bot/reviews-winon.txt"];
+,"http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt"];
 /*,"http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt"
 ,"http://www.phonenana.com/line-bot/reviews-rood.txt"*/
 
