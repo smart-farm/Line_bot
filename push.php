@@ -80,7 +80,7 @@ $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.c
 "http://www.phonenana.com/line-bot/del-bot.php","http://www.phonenana.com/line-bot/del-flow.php","http://www.phonenana.com/line-bot/del-tong.php",
 "http://www.phonenana.com/line-bot/del-mux-on.php","http://www.phonenana.com/line-bot/del-mux-lo.php","http://www.phonenana.com/line-bot/del-rood.php"
 ,"http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com","http://www.phonenana.com","http://www.phonenana.com/line-bot/del-winon.php"
-,"http://www.phonenana.com/line-bot/del-winon.php",,"http://www.phonenana.com/line-bot/del-winon.php"];
+,"http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php"];
 
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
