@@ -95,7 +95,7 @@ $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.c
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
 ,"http://www.phonenana.com/line-bot/del-rood.php"*/
 sleep(1);
-if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin||$id==$idfree2){
+if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
@@ -135,7 +135,7 @@ $url4=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana
 $remove1=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-rood.php",
 "http://www.phonenana.com/line-bot/del-bot.php"];
 
-if($id==$idfree){
+if($id==$idfree||$id==$idfree2){
 for($i = 0; $i<count($formula2);$i++) {
     if($message==$formula2[$i]){
 
