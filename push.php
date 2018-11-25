@@ -188,10 +188,11 @@ for ($i = 0; $i<count($formula1);$i++) {
 }*/
 
 if($message == "gettoken1"){ //vip
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="พร้อมรายงานผลแล้วจ้า !!";  
 $content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id&member=1");
-$arrayPostData['to'] = $id;
-$arrayPostData['messages'][0]['type'] = "text";
-$arrayPostData['messages'][0]['text'] ="พร้อมรายงานผลแล้วจ้า !!";
+
 
 }if($message == "gettoken2"){ //free
 $content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id&member=2");
