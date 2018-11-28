@@ -94,7 +94,7 @@ $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.c
 /*,
 "http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
 ,"http://www.phonenana.com/line-bot/del-rood.php"*/
-sleep(1);
+//sleep(1);
 if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
@@ -191,7 +191,7 @@ if($message == "gettoken1"){ //vip
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
   $arrayPostData['messages'][0]['text'] ="พร้อมรายงานผลแล้วจ้า !!";
-  pushMsg($arrayHeader,$arrayPostData);  
+  pushMsg($arrayHeader,$arrayPostData);
 $content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id&member=1");
 
 
