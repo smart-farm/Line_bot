@@ -121,19 +121,19 @@ for($i = 0; $i<count($formula);$i++) {
     }
 }
 
-$formula2 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก"];
+$formula2 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขเจาะ"];
 $formula3 =["เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง","หวยรัฐบน","หวยรัฐล่าง","เลขรูดบน","เลขรูดล่าง","เลขวินบน","เลขวินล่าง","วินบน","วินล่าง","รูดบน","รูดล่าง","รูดบนล่าง","ปักสิบบน","ปักหน่วยบน"
 ,"ปักสิบล่าง","ปักหน่วยล่าง"];
 $url3 =["http://easylotto.in.th/line-bot/push-win.php","http://easylotto.in.th/line-bot/push-rood.php","http://easylotto.in.th/line-bot/push-seal.php"
-,"http://www.phonenana.com/line-bot/push-puk.php"];
+,"http://www.phonenana.com/line-bot/push-puk.php","http://easylotto.in.th/line-bot/yeekee-drill.php"];
 
 
 $url4=["http://easylotto.in.th/line-bot/reviews-win.txt","http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
-"http://www.phonenana.com/line-bot/reviews-puk.txt"];
+"http://www.phonenana.com/line-bot/reviews-puk.txt","http://easylotto.in.th/line-bot/reviews-drill.txt"];
 
 
 $remove1=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-rood.php",
-"http://easylotto.in.th/line-bot/del-bot.php"];
+"http://easylotto.in.th/line-bot/del-bot.php","http://easylotto.in.th/line-bot/del-drill.php"];
 
 if($id==$idfree||$id==$idfree2){
 for($i = 0; $i<count($formula2);$i++) {
