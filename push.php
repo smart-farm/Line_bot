@@ -68,7 +68,7 @@ $url =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.co
 ,"http://www.phonenana.com/line-bot/line_winon.php?formula=wl","http://www.phonenana.com/line-bot/line_winon.php?formula=rh","http://www.phonenana.com/line-bot/line_winon.php?formula=rl"
 ,"http://www.phonenana.com/line-bot/line_winon.php?formula=rhl","http://www.phonenana.com/line-bot/line_winon.php?formula=ph1"
 ,"http://www.phonenana.com/line-bot/line_winon.php?formula=ph2","http://www.phonenana.com/line-bot/line_winon.php?formula=pl0","http://www.phonenana.com/line-bot/line_winon.php?formula=pl1"
-,"http://www.phonenana.com/line-bot/push-drill.php"];
+,"http://www.phonenana.com/line-bot/yeekee-drill.php"];
 /*,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
 ,*/
 //"http://www.phonenana.com/line-bot/reviews-flow.txt",
