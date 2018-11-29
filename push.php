@@ -21,6 +21,7 @@ $idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
+
  if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
  if($id==$idcheck||$id==$idcheck1){
  if(time()>=strtotime("08:00:00")&& time()<strtotime("02:00:00 + 3 hour"))
@@ -36,7 +37,7 @@ date_default_timezone_set("Asia/Bangkok");
   $arrayPostData['messages'][0]['type'] = "text";
   $arrayPostData['messages'][0]['text'] ="
 ==================================
-ระบบเปิดให้บริการตั้งแต่เวลา 08.00-02.00
+       ระบบเปิดให้บริการตั้งแต่เวลา 08.00-02.00
 ==================================";
 
   pushMsg($arrayHeader,$arrayPostData);
