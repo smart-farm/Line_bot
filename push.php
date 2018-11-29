@@ -13,6 +13,7 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 //$checkid ='Cb2a0ab426f804a15c8233782ea28805d':
 
 $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
+$idcheck1 ='C000b66e767252bdc4efb43fb116d798e';
 //$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
 //$checkloop=['C6158fb947c96653e2706ce8eb2dbae9b','Cb2a0ab426f804a15c8233782ea28805d'];
 $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
@@ -20,35 +21,31 @@ $idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
-/* if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขไหล"||$message=="เลขตอง"||$message=="เลขมัดบน"||$message=="เลขมัดล่าง"){
- if($id==$idcheck){
- if(time()>=strtotime("09:00:00")&& time()<strtotime("00:00:00 + 3 hour"))
+ if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
+ if($id==$idcheck||$id==$idcheck1){
+ if(time()>=strtotime("08:00:00")&& time()<strtotime("02:00:00 + 3 hour"))
  {
   $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
   $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
-  //$idfree2 ='Cb2a0ab426f804a15c8233782ea28805d';
+  $idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 
 }else{
   $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
-
+  $idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
   $arrayPostData['to'] =$id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="การเข้าใช้บริการแอพอีซีรอตโต้
-============
-1. สมัครผ่านลิงค์ของเราก่อนถึงเข้าใช้งานได้
-2. โดยสมัครลิงค์ได้ที่นี่ : http://bit.ly/membervip_free
-3. สมัครสมาชิกเจสด้วย ชื่อสมาชิกใหม่/เบอร์เดิม/บัญชีธนาคารเดิม
-4. จากนั้นเติมเงินเข้าเจสขั้นต่ำ 500 บาท
-5. แคปหน้าจอการเติมเงิน ส่งมาที่ Line ID : ohopc หรือ tor_nvidia-amd
-6. แจ้งเบอร์ของท่านกับแอตมิน เพื่อเข้าใช้งานโปรแกรมอีซีรอตโต้
-7. หากเครดิตท่านไม่เดินเป็นเวลานาน ทางทีมงานขออนุญาตเชิญออก";
+  $arrayPostData['messages'][0]['text'] ="
+==================================
+ระบบเปิดให้บริการตั้งแต่เวลา 08.00-02.00
+==================================";
 
   pushMsg($arrayHeader,$arrayPostData);
 
 
 }
 }
-}*/
+}
+
 
 //$id='C22521a49473a70959e78d41650314a50';
 $idadmin ='C701d3b84cd8afc5d2800f7b1b0f0b09c';
