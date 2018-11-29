@@ -22,7 +22,7 @@ $idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
 
- if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
+ /*if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
  if($id==$idcheck){
  if(time()>=strtotime("08:00:00")&& time()<strtotime("00:00:00 + 3 hour"))
  {
