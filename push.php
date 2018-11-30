@@ -29,7 +29,7 @@ if(time()>=strtotime("00:30:00") && time()<strtotime("08:30:00")){
    $arrayPostData['messages'][0]['text'] ="
  ==============================
         ระบบเปิดให้บริการตั้งแต่เวลา
-             08.30-00.30
+               08.30-00.30
  ==============================
 easylotto.in.th";
 pushMsg($arrayHeader,$arrayPostData);
