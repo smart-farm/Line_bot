@@ -31,7 +31,7 @@ if(time()>=strtotime("00:30:00") && time()<strtotime("08:30:00")){
         ระบบเปิดให้บริการตั้งแต่เวลา
              08.30-00.30
  ==============================
-              easylotto.in.th";
+easylotto.in.th";
 pushMsg($arrayHeader,$arrayPostData);
 $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
 $idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
