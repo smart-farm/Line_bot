@@ -27,9 +27,10 @@ if(time()>=strtotime("00:30:00") && time()<strtotime("08:30:00")){
    $arrayPostData['to'] =$id;
    $arrayPostData['messages'][0]['type'] = "text";
    $arrayPostData['messages'][0]['text'] ="
- ==================================
-        ระบบเปิดให้บริการตั้งแต่เวลา 08.30-00.30
- ==================================
+ ==============================
+        ระบบเปิดให้บริการตั้งแต่เวลา
+             08.30-00.30
+ ==============================
               easylotto.in.th";
 pushMsg($arrayHeader,$arrayPostData);
 $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
