@@ -14,38 +14,34 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 
 $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 $idcheck1 ='C000b66e767252bdc4efb43fb116d798e';
-//$checkroom ='Cb2a0ab426f804a15c8233782ea28805d';
-//$checkloop=['C6158fb947c96653e2706ce8eb2dbae9b','Cb2a0ab426f804a15c8233782ea28805d'];
-$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
-$idfree2 ='C000b66e767252bdc4efb43fb116d798e';
+//$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+//$idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
 
- /*if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
- if($id==$idcheck){
- if(time()>=strtotime("08:00:00")&& time()<strtotime("00:00:00 + 3 hour"))
- {
-  $today=date("Y-m-d",strtotime("-1 days",strtotime($today)));
-  $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
-  //$idfree2 ='C000b66e767252bdc4efb43fb116d798e';
+if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
+ if($id==$idcheck||$id==$idcheck1){
+if(time()>=strtotime("00:30:00") && time()<strtotime("08:30:00")){
 
+   $arrayPostData['to'] =$id;
+   $arrayPostData['messages'][0]['type'] = "text";
+   $arrayPostData['messages'][0]['text'] ="
+ ==================================
+        ระบบเปิดให้บริการตั้งแต่เวลา 08.30-00.30
+ ==================================
+              easylotto.in.th";
+pushMsg($arrayHeader,$arrayPostData);
+$idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
+$idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
 }else{
-  $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
-  //$idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
-  $arrayPostData['to'] =$id;
-  $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="
-==================================
-       ระบบเปิดให้บริการตั้งแต่เวลา 08.00-02.00
-==================================";
 
-  pushMsg($arrayHeader,$arrayPostData);
-
+  $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+  $idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 
 }
 }
-}*/
+}
 
 
 //$id='C22521a49473a70959e78d41650314a50';
@@ -67,9 +63,7 @@ $url =["http://www.phonenana.com/line-bot/push-win.php","http://www.phonenana.co
 ,"http://www.phonenana.com/line-bot/line_winon.php?formula=rhl","http://www.phonenana.com/line-bot/line_winon.php?formula=ph1"
 ,"http://www.phonenana.com/line-bot/line_winon.php?formula=ph2","http://www.phonenana.com/line-bot/line_winon.php?formula=pl0","http://www.phonenana.com/line-bot/line_winon.php?formula=pl1"
 ,"http://www.phonenana.com/line-bot/yeekee-drill.php"];
-/*,"http://www.phonenana.com/line-bot/push-win-on.php","http://www.phonenana.com/line-bot/push-win-lower.php","http://www.phonenana.com/line-bot/push-rood-on.php"
-,*/
-//"http://www.phonenana.com/line-bot/reviews-flow.txt",
+
 $url1=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt","http://www.phonenana.com/line-bot/reviews-rood.txt",
 "http://www.phonenana.com/line-bot/reviews-puk.txt","http://www.phonenana.com/line-bot/reviews-tong.txt"
 ,"http://www.phonenana.com/line-bot/reviews-on.txt","http://www.phonenana.com/line-bot/reviews-lo.txt","http://www.phonenana.com/line-bot/reviews-rood.txt",
@@ -78,9 +72,7 @@ $url1=["http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana
 "http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt"
 ,"http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt","http://www.phonenana.com/line-bot/reviews-winon.txt"
 ,"http://www.phonenana.com/line-bot/reviews-drill.txt"];
-/*,"http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-win.txt","http://www.phonenana.com/line-bot/reviews-rood.txt"
-,"http://www.phonenana.com/line-bot/reviews-rood.txt"*/
-//"http://www.phonenana.com/line-bot/del-flow.php",
+
 $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php","http://www.phonenana.com/line-bot/del-rood.php",
 "http://www.phonenana.com/line-bot/del-bot.php","http://www.phonenana.com/line-bot/del-tong.php",
 "http://www.phonenana.com/line-bot/del-mux-on.php","http://www.phonenana.com/line-bot/del-mux-lo.php","http://www.phonenana.com/line-bot/del-rood.php"
@@ -89,10 +81,7 @@ $remove=["http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.c
 ,"http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php"
 ,"http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-winon.php","http://www.phonenana.com/line-bot/del-drill.php"];
 
-/*,
-"http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-win.php","http://www.phonenana.com/line-bot/del-rood.php"
-,"http://www.phonenana.com/line-bot/del-rood.php"*/
-//sleep(1);
+
 if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
@@ -185,7 +174,7 @@ for ($i = 0; $i<count($formula1);$i++) {
     }
 }*/
 
-if($message == "gettoken1"){ //vip
+/*if($message == "gettoken1"){ //vip
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
   $arrayPostData['messages'][0]['text'] ="พร้อมรายงานผลแล้วจ้า !!";
@@ -197,7 +186,7 @@ $content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id
 $content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id&member=2");
 //header("Location:http://phonenana.com/line-bot/get-token.php?id=$id");
 
-}
+}*/
 
 
 function pushMsg($arrayHeader,$arrayPostData){
