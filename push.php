@@ -105,7 +105,7 @@ for($i = 0; $i<count($formula);$i++) {
 }else{
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://www.phonenana.com";
+  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://easylotto.in.th";
   $arrayPostData['messages'][1]['type'] = "sticker";
   $arrayPostData['messages'][1]['packageId'] = "2";
   $arrayPostData['messages'][1]['stickerId'] = "34";
@@ -145,7 +145,7 @@ for($i = 0; $i<count($formula2);$i++) {
 }else{
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://www.phonenana.com";
+  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://easylotto.in.th";
   $arrayPostData['messages'][1]['type'] = "sticker";
   $arrayPostData['messages'][1]['packageId'] = "2";
   $arrayPostData['messages'][1]['stickerId'] = "34";
@@ -167,33 +167,15 @@ for($i = 0; $i<count($formula2);$i++) {
   }
 }
 
-
-/*$formula1 =["หวยรัฐบน","หวยรัฐล่าง"];
-$url2 =["http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto.txt","http://tornvidia.thddns.net:5152/easylotto/line-bot/lotto-in.txt"];
-if($id==$id199||$id==$idadmin||$id==$idvip1||$id==$idvip2){
-for ($i = 0; $i<count($formula1);$i++) {
-    if($message==$formula1[$i]){
-         $content = file_get_contents($url2[$i], "\xEF\xBB\xBF");
-          $arrayPostData['to'] = $id;
-          $arrayPostData['messages'][0]['type'] = "text";
-          $arrayPostData['messages'][0]['text'] = $content;
-          pushMsg($arrayHeader,$arrayPostData);
-      }
-    }
-}*/
-
-if($message == "gettoken1"){ //vip
-  $arrayPostData['to'] = $id;
-  $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="พร้อมรายงานผลแล้วจ้า !!";
-  pushMsg($arrayHeader,$arrayPostData);
-$content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id&member=1");
+$userid = $arrayJson['events'][0]['source']['userId'];
 
 
-}if($message == "gettoken2"){ //free
-$content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id&member=2");
-//header("Location:http://phonenana.com/line-bot/get-token.php?id=$id");
-
+if($id ==$idadmin){ //vip
+  //$arrayPostData['to'] = $id;
+  //$arrayPostData['messages'][0]['type'] = "text";
+  //$arrayPostData['messages'][0]['text'] ="พร้อมรายงานผลแล้วจ้า !!";
+  //pushMsg($arrayHeader,$arrayPostData);
+$content = file_get_contents("http://easylotto.in.th/line-bot/get-admin.php?userid=$userid");
 }
 
 
