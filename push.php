@@ -37,8 +37,6 @@ pushMsg($arrayHeader,$arrayPostData);
 $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
 //$idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
 }else{
-
-  $idfree ='C6158fb947c96653e2706ce8eb2dbae9xxx';
 //  $idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 $arrayPostData['to'] =$id;
 $arrayPostData['messages'][0]['type'] = "text";
@@ -47,6 +45,8 @@ $arrayPostData['messages'][0]['text'] ="
      ปิดระบบการส่งเลขชั่วคราว
 ==============================
 สมัครสมาชิกคลิก:easylotto.in.th";
+
+$idfree ='C6158fb947c96653e2706ce8eb2dbae9xxx';
 
 }
 }
