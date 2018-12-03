@@ -103,7 +103,7 @@ for($i = 0; $i<count($formula);$i++) {
          $requal = file_get_contents($remove[$i]);
 
         $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
-         //$idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
+        $idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
 }else{
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
