@@ -180,7 +180,7 @@ $content = file_get_contents("http://easylotto.in.th/line-bot/user-endtime.txt",
  $requal = file_get_contents("http://easylotto.in.th/line-bot/del-user.php");
 
 }
-|
+}
 
 
 
