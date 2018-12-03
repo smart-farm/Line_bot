@@ -37,8 +37,8 @@ pushMsg($arrayHeader,$arrayPostData);
 $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
 $idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
 }else{
-$idfree2 ='C000b66e767252bdc4efb43fb116d798e';
-$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+$idfree2 ='C000b66e767252bdc4efb43fb116d798exxx';
+$idfree ='C6158fb947c96653e2706ce8eb2dbae9bxxx';
 
 }
 }
