@@ -89,7 +89,8 @@ $remove=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/l
 
 $useradmin1="U890a31fb1c5c8f07cc06e8ae47202f75";
 $useradmin2="U2f4fe4ca40895f6913b908a4c6fdcb95";
-if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin||$userid==$useradmin1||$userid==$useradmin2){
+$useradmin3="U6d0021f8e019a176ff0c11a6b6677bcb";
+if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin||$userid==$useradmin1||$userid==$useradmin2||$userid==$useradmin3){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
@@ -169,13 +170,13 @@ for($i = 0; $i<count($formula2);$i++) {
 
 
 
-if($id ==$idadmin){ //vip
+/*if($id ==$idadmin){ //vip
   //$arrayPostData['to'] = $id;
   //$arrayPostData['messages'][0]['type'] = "text";
   //$arrayPostData['messages'][0]['text'] ="พร้อมรายงานผลแล้วจ้า !!";
   //pushMsg($arrayHeader,$arrayPostData);
 $content = file_get_contents("http://easylotto.in.th/line-bot/get-admin.php?userid=$userid");
-}
+}*/
 
 
 function pushMsg($arrayHeader,$arrayPostData){
