@@ -22,7 +22,7 @@ date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
 
 if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
- if($id==$idcheck}}$id==$idcheck1){ //||$id==$idcheck1
+ if($id==$idcheck||$id==$idcheck1){ //||$id==$idcheck1
 if(time()>=strtotime("22:00:00") && time()<strtotime("00:00:00")){
 
    $arrayPostData['to'] =$id;
