@@ -169,6 +169,19 @@ for($i = 0; $i<count($formula2);$i++) {
   }
 }
 
+if($message=="หมดอายุ"){
+if($userid==$useradmin1||$userid==$useradmin3||$userid==$useradmin3){
+$requal = file_get_contents("http://easylotto.in.th/line-bot/user-endtime.php");
+$content = file_get_contents("http://easylotto.in.th/line-bot/user-endtime.txt", "\xEF\xBB\xBF");
+ $arrayPostData['to'] = $id;
+ $arrayPostData['messages'][0]['type'] = "text";
+ $arrayPostData['messages'][0]['text'] = $content;
+ pushMsg($arrayHeader,$arrayPostData);
+ $requal = file_get_contents("http://easylotto.in.th/line-bot/del-user.php");
+
+}
+|
+
 
 
 
