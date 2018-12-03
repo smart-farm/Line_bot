@@ -170,7 +170,7 @@ for($i = 0; $i<count($formula2);$i++) {
 }
 
 if($message=="หมดอายุ"){
-if($userid==$useradmin1||$userid==$useradmin3||$userid==$useradmin3){
+if($userid==$useradmin1||$userid==$useradmin2||$userid==$useradmin3){
 $requal = file_get_contents("http://easylotto.in.th/line-bot/user-endtime.php");
 $content = file_get_contents("http://easylotto.in.th/line-bot/user-endtime.txt", "\xEF\xBB\xBF");
  $arrayPostData['to'] = $id;
