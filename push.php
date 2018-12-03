@@ -169,13 +169,13 @@ for($i = 0; $i<count($formula2);$i++) {
 
 
 
-/*if($id ==$idadmin){ //vip
+if($id ==$idadmin){ //vip
   //$arrayPostData['to'] = $id;
   //$arrayPostData['messages'][0]['type'] = "text";
   //$arrayPostData['messages'][0]['text'] ="พร้อมรายงานผลแล้วจ้า !!";
   //pushMsg($arrayHeader,$arrayPostData);
 $content = file_get_contents("http://easylotto.in.th/line-bot/get-admin.php?userid=$userid");
-}*/
+}
 
 
 function pushMsg($arrayHeader,$arrayPostData){
