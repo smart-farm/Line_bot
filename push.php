@@ -132,6 +132,15 @@ $remove1=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/
 "http://easylotto.in.th/line-bot/del-bot.php","http://easylotto.in.th/line-bot/del-drill.php"];
 
 if($id==$idfree||$id==$idfree2){
+  for($i = 0; $i<count($formula3);$i++){
+      if($message==$formula3[$i]){
+        $arrayPostData['to'] = $id;
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] ="เฉพาะ Vip เท่านั้น สมัครคลิกที่นี้
+      http://easylotto.in.th/";
+        pushMsg($arrayHeader,$arrayPostData);
+            }
+    }  
 for($i = 0; $i<count($formula2);$i++){
     if($message==$formula2[$i]){
 
@@ -156,17 +165,8 @@ for($i = 0; $i<count($formula2);$i++){
 }*/
 }
 }
-  for($i = 0; $i<count($formula3);$i++) {
-    if($message==$formula3[$i]){
-      $arrayPostData['to'] = $id;
-      $arrayPostData['messages'][0]['type'] = "text";
-      $arrayPostData['messages'][0]['text'] ="เฉพาะ Vip เท่านั้น สมัครคลิกที่นี้
-    http://easylotto.in.th/";
-      pushMsg($arrayHeader,$arrayPostData);
-          }
 
 
-  }
 }
 if($id==$idadmin){
 if($message=="setoff1"){
