@@ -133,11 +133,12 @@ $remove1=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/
 "http://easylotto.in.th/line-bot/del-bot.php","http://easylotto.in.th/line-bot/del-drill.php"];
 
 if($id==$idfree||$id==$idfree2){
-for($i = 0; $i<count($formula2);$i++) {
+for($i = 0; $i<count($formula2);$i++){
     if($message==$formula2[$i]){
 
-         $requal = file_get_contents($url3[$i]);
-         if($requal!=""){
+      $content = file_get_contents("http://easylotto.in.th/line-bot/status.php?id=$id&message=$formula2[$i]&url1=$url3[$i]&url2=$url4[$i]&remove=$remove1[$i]");
+         //$requal = file_get_contents($url3[$i]);
+        /* if($requal!=""){
          $content = file_get_contents($url4[$i], "\xEF\xBB\xBF");
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
@@ -153,7 +154,7 @@ for($i = 0; $i<count($formula2);$i++) {
   $arrayPostData['messages'][1]['stickerId'] = "34";
   pushMsg($arrayHeader,$arrayPostData);
 
-}
+}*/
 }
 }
   for($i = 0; $i<count($formula3);$i++) {
