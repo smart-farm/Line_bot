@@ -184,8 +184,8 @@ $content = file_get_contents("http://easylotto.in.th/line-bot/user-endtime.txt",
 }
 
 if($message=="setoff1ุ"||$message=="setoff2ุ"||$message=="seton1ุ"||$message=="seton2ุ"){
-if($userid==$useradmin1||$userid==$useradmin2||$userid==$useradmin3){
-  
+if($id==$idadmin){
+
 $requal = file_get_contents("http://easylotto.in.th/line-bot/set-onoff.php?id=$id&message=$message");
 
 }
