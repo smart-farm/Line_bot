@@ -176,11 +176,11 @@ $requal = file_get_contents("http://easylotto.in.th/line-bot/set-onoff.php?id=C7
 if($message=="setoff2"){
 $requal = file_get_contents("http://easylotto.in.th/line-bot/set-onoff.php?id=C701d3b84cd8afc5d2800f7b1b0f0b09c&idfree=Cd95550591ae6ca7084af635c0d822c59&status=0&set=ห้องฟรี2");
 }
-if($message=="setoon1"){
+if($message=="seton1"){
 $requal = file_get_contents("http://easylotto.in.th/line-bot/set-onoff.php?id=C701d3b84cd8afc5d2800f7b1b0f0b09c&idfree=C6158fb947c96653e2706ce8eb2dbae9b&status=1&set=ห้องฟรี1");
 }
 if($message=="seton2"){
-$requal = file_get_contents("http://easylotto.in.th/line-bot/set-onoff.php?id=C701d3b84cd8afc5d2800f7b1b0f0b09c&idfree=Cd95550591ae6ca7084af635c0d822c59&status=1&set=ห้องฟรี2");  
+$requal = file_get_contents("http://easylotto.in.th/line-bot/set-onoff.php?id=C701d3b84cd8afc5d2800f7b1b0f0b09c&idfree=Cd95550591ae6ca7084af635c0d822c59&status=1&set=ห้องฟรี2");
 }
 }
 
