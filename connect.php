@@ -9,5 +9,5 @@ if (!$c)
 	echo "ไม่สามารถเชื่อมต่อได้";
 	exit();
 }*/
-echo "easylotto.in.th";
+echo "555";
 ?>
