@@ -1,7 +1,7 @@
 ﻿<?php
 $host="easylotto.in.th";
 $user="root";
-$pw="Ae41121526";
+$pw="Ae411215267";
 $dbname="phonenan_2016";
 $c=mysql_connect($host,$user,$pw);
 if (!$c)
