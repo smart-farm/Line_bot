@@ -183,13 +183,18 @@ $content = file_get_contents("http://easylotto.in.th/line-bot/user-endtime.txt",
 }
 }
 
-if($message=="setoff1ุ"||$message=="setoff2ุ"||$message=="seton1ุ"||$message=="seton2ุ"){
+//if($message=="setoff1ุ"||$message=="setoff2ุ"||$message=="seton1ุ"||$message=="seton2ุ"){
 if($id==$idadmin){
+if($message=="setoff1ุ"){
+$requal = file_get_contents("http://easylotto.in.th/line-bot/set-onoff.php?id=$id&idfree=$idfree&status=0&set='ห้องฟรี 1'");
+}
 
-$requal = file_get_contents("http://easylotto.in.th/line-bot/set-onoff.php?id=$id&message=$message");
+
+
+
 
 }
-}
+
 
 
 
