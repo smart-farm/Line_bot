@@ -102,8 +102,8 @@ for($i = 0; $i<count($formula);$i++) {
           pushMsg($arrayHeader,$arrayPostData);
          $requal = file_get_contents($remove[$i]);
 
-        //$idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
-        //$idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
+        $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
+        $idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
 }else{
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
@@ -140,7 +140,7 @@ if($id==$idfree||$id==$idfree2){
       http://easylotto.in.th/";
         pushMsg($arrayHeader,$arrayPostData);
             }
-    }  
+    }
 for($i = 0; $i<count($formula2);$i++){
     if($message==$formula2[$i]){
 
