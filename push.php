@@ -102,8 +102,8 @@ for($i = 0; $i<count($formula);$i++) {
           pushMsg($arrayHeader,$arrayPostData);
          $requal = file_get_contents($remove[$i]);
 
-        $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
-        $idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
+        //$idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
+        //$idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
 }else{
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
@@ -119,8 +119,7 @@ for($i = 0; $i<count($formula);$i++) {
 }
 
 $formula2 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขเจาะ"];
-$formula3 =["เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง","หวยรัฐบน","หวยรัฐล่าง","เลขรูดบน","เลขรูดล่าง","เลขวินบน","เลขวินล่าง","วินบน","วินล่าง","รูดบน","รูดล่าง","รูดบนล่าง","ปักสิบบน","ปักหน่วยบน"
-,"ปักสิบล่าง","ปักหน่วยล่าง"];
+$formula3 =["เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง","หวยรัฐบน","หวยรัฐล่าง","เลขรูดบน","เลขรูดล่าง","เลขวินบน","เลขวินล่าง","วินบน","วินล่าง","รูดบน","รูดล่าง","รูดบนล่าง","ปักสิบบน","ปักหน่วยบน","ปักสิบล่าง","ปักหน่วยล่าง"];
 $url3 =["http://easylotto.in.th/line-bot/push-win.php","http://easylotto.in.th/line-bot/push-rood.php","http://easylotto.in.th/line-bot/push-seal.php"
 ,"http://easylotto.in.th/line-bot/push-puk.php","http://easylotto.in.th/line-bot/yeekee-drill.php"];
 
