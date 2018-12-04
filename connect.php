@@ -1,5 +1,5 @@
 ﻿<?php
-$host="easylotto.in.th";
+/*$host="easylotto.in.th";
 $user="root";
 $pw="Ae41121526";
 $dbname="phonenan_2016";
@@ -8,6 +8,6 @@ if (!$c)
 {
 	echo "ไม่สามารถเชื่อมต่อได้";
 	exit();
-}
+}*/
 echo "easylotto.in.th";
 ?>
