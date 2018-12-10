@@ -105,6 +105,7 @@ for($i = 0; $i<count($formula);$i++) {
 
         $idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
         $idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
+        $id100='Cb12ff2198b553dd2fd950432db7c852dxxx';
 }else{
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
