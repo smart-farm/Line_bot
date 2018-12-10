@@ -52,6 +52,7 @@ $id199 ='C678b1d0f7f216ba96cf8b6e784bac718xxx';
 //ห้องใหม่
 $idvip1='Cfee29536f26d44c081fe4eeb08a5400e';
 $idvip2='Cd95550591ae6ca7084af635c0d822c59';
+$id100='Cb12ff2198b553dd2fd950432db7c852d';
 //,"http://www.phonenana.com/line-bot/push-flow.php"
 
 $formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขตอง","เลขมัดบน","เลขมัดล่าง","เลขรูดบน","เลขรูดล่าง","หวยรัฐบน","หวยรัฐล่าง","วินบน","วินล่าง","รูดบน","รูดล่าง","รูดบนล่าง","ปักสิบบน","ปักหน่วยบน"
@@ -89,7 +90,7 @@ $remove=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/l
 $useradmin1="U890a31fb1c5c8f07cc06e8ae47202f75";
 $useradmin2="U2f4fe4ca40895f6913b908a4c6fdcb95";
 $useradmin3="U6d0021f8e019a176ff0c11a6b6677bcb";
-if($id==$id199||$id==$idvip1||$id==$idvip2||$id==$idadmin||$userid==$useradmin1||$userid==$useradmin2||$userid==$useradmin3){
+if($id==$idvip1||$id==$idvip2||$id==$idadmin||$userid==$useradmin1||$userid==$useradmin2||$userid==$useradmin3){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
@@ -117,6 +118,52 @@ for($i = 0; $i<count($formula);$i++) {
       }
     }
 }
+
+$formula100 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขตอง","เลขมัดบน","เลขมัดล่าง","เลขรูดบน","เลขรูดล่าง","เลขเจาะ"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
+$url100 =["http://easylotto.in.th/line-bot/push-win.php","http://easylotto.in.th/line-bot/push-rood.php","http://easylotto.in.th/line-bot/push-seal.php"
+,"http://easylotto.in.th/line-bot/push-puk.php","http://easylotto.in.th/line-bot/remind.php",
+"http://easylotto.in.th/line-bot/yeekee-bundle.php","http://easylotto.in.th/line-bot/yeekee-bundle-lo.php","http://easylotto.in.th/line-bot/push-rood-on.php"
+,"http://easylotto.in.th/line-bot/push-rood-lower.php","http://easylotto.in.th/line-bot/yeekee-drill.php"];
+
+$urlget=["http://easylotto.in.th/line-bot/reviews-win.txt","http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
+"http://easylotto.in.th/line-bot/reviews-puk.txt","http://easylotto.in.th/line-bot/reviews-tong.txt"
+,"http://easylotto.in.th/line-bot/reviews-on.txt","http://easylotto.in.th/line-bot/reviews-lo.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
+"http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/line-bot/reviews-drill.txt"];
+
+$remove100=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-rood.php",
+"http://easylotto.in.th/line-bot/del-bot.php","http://easylotto.in.th/line-bot/del-tong.php",
+"http://easylotto.in.th/line-bot/del-mux-on.php","http://easylotto.in.th/line-bot/del-mux-lo.php","http://easylotto.in.th/line-bot/del-rood.php"
+,"http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-drill.php"];
+
+
+if($id==$id100){
+for($i = 0; $i<count($formula100);$i++) {
+    if($message==$formula100[$i]){
+
+         $requal = file_get_contents($url100[$i]);
+         if($requal!=""){
+         $content = file_get_contents($urlget[$i], "\xEF\xBB\xBF");
+          $arrayPostData['to'] = $id;
+          $arrayPostData['messages'][0]['type'] = "text";
+          $arrayPostData['messages'][0]['text'] = $content;
+          pushMsg($arrayHeader,$arrayPostData);
+         $requal = file_get_contents($remove100[$i]);
+
+}else{
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://easylotto.in.th";
+  $arrayPostData['messages'][1]['type'] = "sticker";
+  $arrayPostData['messages'][1]['packageId'] = "2";
+  $arrayPostData['messages'][1]['stickerId'] = "34";
+  pushMsg($arrayHeader,$arrayPostData);
+
+}
+      }
+    }
+}
+
+
 
 $formula2 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขเจาะ"];
 $formula3 =["เลขไหล","เลขตอง","เลขมัดบน","เลขมัดล่าง","หวยรัฐบน","หวยรัฐล่าง","เลขรูดบน","เลขรูดล่าง","เลขวินบน","เลขวินล่าง","วินบน","วินล่าง","รูดบน","รูดล่าง","รูดบนล่าง","ปักสิบบน","ปักหน่วยบน","ปักสิบล่าง","ปักหน่วยล่าง"];
