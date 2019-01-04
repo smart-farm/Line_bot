@@ -43,7 +43,8 @@ $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
 
 //$idadmin ='C701d3b84cd8afc5d2800f7b1b0f0b09c';
 
-$idvip1='Cf291e9b801e5e4e6a0993ae2ee8de927';
+$idfree='Cf291e9b801e5e4e6a0993ae2ee8de927';
+$idvip='Ca1435d8d07b5c377b3483c958cbc0829';
 
 
 
@@ -78,7 +79,7 @@ $remove=["http://easylotto.in.th/line-huay/del-win.php","http://easylotto.in.th/
 /*$useradmin1="U890a31fb1c5c8f07cc06e8ae47202f75";
 $useradmin2="U2f4fe4ca40895f6913b908a4c6fdcb95";
 $useradmin3="U6d0021f8e019a176ff0c11a6b6677bcb";*/
-if($id==$idvip1){
+if($id==$idvip||$id==$idfree){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
