@@ -79,7 +79,7 @@ $remove=["http://easylotto.in.th/line-huay/del-win.php","http://easylotto.in.th/
 /*$useradmin1="U890a31fb1c5c8f07cc06e8ae47202f75";
 $useradmin2="U2f4fe4ca40895f6913b908a4c6fdcb95";
 $useradmin3="U6d0021f8e019a176ff0c11a6b6677bcb";*/
-if($id==$idvip||$id==$idfree){
+if($id==$idvip){
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
@@ -107,6 +107,57 @@ for($i = 0; $i<count($formula);$i++) {
     }
 }
 
+
+
+$formulafree =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขรูดบน","เลขรูดล่าง","เลขเจาะ"];
+$urlfree =["http://easylotto.in.th/line-huay/push-win.php","http://easylotto.in.th/line-huay/push-rood.php","http://easylotto.in.th/line-huay/push-seal.php"
+,"http://easylotto.in.th/line-huay/push-puk.php","http://easylotto.in.th/line-huay/push-rood-on.php"
+,"http://easylotto.in.th/line-huay/push-rood-lower.php","http://easylotto.in.th/line-huay/yeekee-drill.php"];
+
+$urlfrees=["http://easylotto.in.th/line-huay/reviews-win.txt","http://easylotto.in.th/line-huay/reviews-rood.txt","http://easylotto.in.th/line-huay/reviews-rood.txt",
+"http://easylotto.in.th/line-huay/reviews-puk.txt","http://easylotto.in.th/line-huay/reviews-rood.txt",
+"http://easylotto.in.th/line-huay/reviews-rood.txt","http://easylotto.in.th/line-huay/reviews-drill.txt"];
+
+$remove1=["http://easylotto.in.th/line-huay/del-win.php","http://easylotto.in.th/line-huay/del-rood.php","http://easylotto.in.th/line-huay/del-rood.php",
+"http://easylotto.in.th/line-huay/del-bot.php","http://easylotto.in.th/line-huay/del-rood.php"
+,"http://easylotto.in.th/line-huay/del-rood.php","http://easylotto.in.th/line-huay/del-drill.php"];
+
+/*$useradmin1="U890a31fb1c5c8f07cc06e8ae47202f75";
+$useradmin2="U2f4fe4ca40895f6913b908a4c6fdcb95";
+$useradmin3="U6d0021f8e019a176ff0c11a6b6677bcb";*/
+if($id==$idfree){
+for($i = 0; $i<count($formulafree);$i++) {
+    if($message==$formulafree[$i]){
+
+         $requal = file_get_contents($urlfree[$i]);
+         if($requal!=""){
+         $content = file_get_contents($urlfrees[$i], "\xEF\xBB\xBF");
+          $arrayPostData['to'] = $id;
+          $arrayPostData['messages'][0]['type'] = "text";
+          $arrayPostData['messages'][0]['text'] = $content;
+          pushMsg($arrayHeader,$arrayPostData);
+         $requal = file_get_contents($remove1[$i]);
+
+
+}else{
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://easylotto.in.th";
+  $arrayPostData['messages'][1]['type'] = "sticker";
+  $arrayPostData['messages'][1]['packageId'] = "2";
+  $arrayPostData['messages'][1]['stickerId'] = "34";
+  pushMsg($arrayHeader,$arrayPostData);
+
+}
+}else{
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="เฉพาะ VIP เท่านั้น สมัครผ่านลิงค์คลิกที่นี้ :https://bit.ly/2QTYwtT
+  รายเดือน :https://bit.ly/2GXD437";
+  pushMsg($arrayHeader,$arrayPostData);
+}
+    }
+}
 
 
 /*
