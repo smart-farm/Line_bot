@@ -110,6 +110,8 @@ for($i = 0; $i<count($formula);$i++) {
 
 
 $formulafree =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขรูดบน","เลขรูดล่าง","เลขเจาะ"];
+$formulacheck =["เลขตอง","เลขมัดบน","เลขมัดล่าง","หวยรัฐบน","หวยรัฐล่าง","วินบน","วินล่าง","รูดบน","รูดล่าง","รูดบนล่าง","ปักสิบบน","ปักหน่วยบน"
+,"ปักสิบล่าง","ปักหน่วยล่าง"];
 $urlfree =["http://easylotto.in.th/line-huay/push-win.php","http://easylotto.in.th/line-huay/push-rood.php","http://easylotto.in.th/line-huay/push-seal.php"
 ,"http://easylotto.in.th/line-huay/push-puk.php","http://easylotto.in.th/line-huay/push-rood-on.php"
 ,"http://easylotto.in.th/line-huay/push-rood-lower.php","http://easylotto.in.th/line-huay/yeekee-drill.php"];
@@ -149,6 +151,13 @@ for($i = 0; $i<count($formulafree);$i++) {
   pushMsg($arrayHeader,$arrayPostData);
 
 }
+}if($message==$formulacheck[$i]){
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="เฉพาะ VIP เท่านั้น สมัครผ่านลิงค์คลิกที่นี้ :https://bit.ly/2QTYwtT
+  รายเดือน :https://bit.ly/2GXD437";
+  pushMsg($arrayHeader,$arrayPostData);
+
 }
     }
 }
