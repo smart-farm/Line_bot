@@ -149,12 +149,6 @@ for($i = 0; $i<count($formulafree);$i++) {
   pushMsg($arrayHeader,$arrayPostData);
 
 }
-}else{
-  $arrayPostData['to'] = $id;
-  $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="เฉพาะ VIP เท่านั้น สมัครผ่านลิงค์คลิกที่นี้ :https://bit.ly/2QTYwtT
-  รายเดือน :https://bit.ly/2GXD437";
-  pushMsg($arrayHeader,$arrayPostData);
 }
     }
 }
