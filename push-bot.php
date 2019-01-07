@@ -163,8 +163,20 @@ for($i = 0; $i<count($formulacheck);$i++) {
 
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
-          $arrayPostData['messages'][0]['text'] ="เฉพาะ VIP เท่านั้น สมัครผ่านลิงค์คลิกที่นี้ :https://bit.ly/2QTYwtT
-  รายเดือน :https://bit.ly/2GXD437";
+          $arrayPostData['messages'][0]['text'] ="คำสั่งเลขยี่กี เว็บหวย
+ ➖➖➖➖➖➖➖➖
+ 1. เลขวิน
+ 2. เลขรูด
+ 3. เลขเสียว้
+ 4. เลขปัก
+ 5. เลขรูดบน
+ 6. เลขรูดล่าง
+ 7. เลขเจาะ
+ 8. เลขตอง
+ ➖➖➖➖➖➖➖➖
+ สนใจสูตรอื่นๆ อีก 14 สูตร
+ สมัครผ่านลิงค์เรา : https://bit.ly/2QTYwtT
+ หรือสมัครรายเดือน : https://bit.ly/2GXD437";
           pushMsg($arrayHeader,$arrayPostData);
 
 }
