@@ -144,6 +144,7 @@ for($i = 0; $i<count($formula100);$i++) {
          $requal = file_get_contents($url100[$i]);
          if($requal!=""){
          $content = file_get_contents($urlget[$i], "\xEF\xBB\xBF");
+          $content=strip_tags($content);
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
           $arrayPostData['messages'][0]['text'] = $content;
