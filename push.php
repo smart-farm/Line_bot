@@ -71,7 +71,7 @@ $url =["http://easylotto.in.th/line-bot/push-win.php","http://easylotto.in.th/li
 $url1=["http://easylotto.in.th/line-bot/reviews-win.txt","http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
 "http://easylotto.in.th/line-bot/reviews-puk.txt","http://easylotto.in.th/line-bot/reviews-tong.txt"
 ,"http://easylotto.in.th/line-bot/reviews-on.txt","http://easylotto.in.th/line-bot/reviews-lo.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
-"http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/bot-lotto-on.php","http://easylotto.in.th/bot-lotto-lower.php"
+"http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/bot-lotto-on.php?lotto=1","http://easylotto.in.th/bot-lotto-lower.php?lotto=1"
 ,"http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt",
 "http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt"
 ,"http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt"
