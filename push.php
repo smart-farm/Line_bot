@@ -55,12 +55,12 @@ $idvip2='Cd95550591ae6ca7084af635c0d822c59';
 $id100='Cb12ff2198b553dd2fd950432db7c852d';
 //,"http://www.phonenana.com/line-bot/push-flow.php"
 
-$formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขตอง","เลขมัดบน","เลขมัดล่าง","เลขรูดบน","เลขรูดล่าง","หวยรัฐบน","หวยรัฐล่าง","วินบน","วินล่าง","รูดบน","รูดล่าง","รูดบนล่าง","ปักสิบบน","ปักหน่วยบน"
+$formula =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขตอง","เลขมัดบน","เลขมัดล่าง","เลขรูดบน","เลขรูดล่าง","หวยรัฐบาล","วินบน","วินล่าง","รูดบน","รูดล่าง","รูดบนล่าง","ปักสิบบน","ปักหน่วยบน"
 ,"ปักสิบล่าง","ปักหน่วยล่าง","เลขเจาะ","หวยลาว","หวยเวียดนาม","หวยมาเลย์","หุ้นไทยเย็น","หุ้นดาวน์โจน"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
 $url =["http://easylotto.in.th/line-bot/push-win.php","http://easylotto.in.th/line-bot/push-rood.php","http://easylotto.in.th/line-bot/push-seal.php"
 ,"http://easylotto.in.th/line-bot/push-puk.php","http://easylotto.in.th/line-bot/remind.php",
 "http://easylotto.in.th/line-bot/yeekee-bundle.php","http://easylotto.in.th/line-bot/yeekee-bundle-lo.php","http://easylotto.in.th/line-bot/push-rood-on.php"
-,"http://easylotto.in.th/line-bot/push-rood-lower.php","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th/line-bot/line_winon.php?formula=wh"
+,"http://easylotto.in.th/line-bot/push-rood-lower.php","http://easylotto.in.th","http://easylotto.in.th/line-bot/line_winon.php?formula=wh"
 ,"http://easylotto.in.th/line-bot/line_winon.php?formula=wl","http://easylotto.in.th/line-bot/line_winon.php?formula=rh","http://easylotto.in.th/line-bot/line_winon.php?formula=rl"
 ,"http://easylotto.in.th/line-bot/line_winon.php?formula=rhl","http://easylotto.in.th/line-bot/line_winon.php?formula=ph1"
 ,"http://easylotto.in.th/line-bot/line_winon.php?formula=ph2","http://easylotto.in.th/line-bot/line_winon.php?formula=pl0","http://easylotto.in.th/line-bot/line_winon.php?formula=pl1"
@@ -70,7 +70,7 @@ $url =["http://easylotto.in.th/line-bot/push-win.php","http://easylotto.in.th/li
 $url1=["http://easylotto.in.th/line-bot/reviews-win.txt","http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
 "http://easylotto.in.th/line-bot/reviews-puk.txt","http://easylotto.in.th/line-bot/reviews-tong.txt"
 ,"http://easylotto.in.th/line-bot/reviews-on.txt","http://easylotto.in.th/line-bot/reviews-lo.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
-"http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/bot-lotto-on.php?lotto=1","http://easylotto.in.th/bot-lotto-lower.php?lotto=1"
+"http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/bot-lotto-all.php?lotto=1"
 ,"http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt",
 "http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt"
 ,"http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt"
@@ -80,7 +80,7 @@ $url1=["http://easylotto.in.th/line-bot/reviews-win.txt","http://easylotto.in.th
 $remove=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-rood.php",
 "http://easylotto.in.th/line-bot/del-bot.php","http://easylotto.in.th/line-bot/del-tong.php",
 "http://easylotto.in.th/line-bot/del-mux-on.php","http://easylotto.in.th/line-bot/del-mux-lo.php","http://easylotto.in.th/line-bot/del-rood.php"
-,"http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th/line-bot/del-winon.php"
+,"http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th","http://easylotto.in.th/line-bot/del-winon.php"
 ,"http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php"
 ,"http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php"
 ,"http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-drill.php"
