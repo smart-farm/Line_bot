@@ -121,21 +121,24 @@ for($i = 0; $i<count($formula);$i++) {
     }
 }
 
-$formula100 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขตอง","เลขมัดบน","เลขมัดล่าง","เลขรูดบน","เลขรูดล่าง","เลขเจาะ"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
+$formula100 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขตอง","เลขมัดบน","เลขมัดล่าง","เลขรูดบน","เลขรูดล่าง","เลขเจาะ","หวยรัฐบาล","หวยลาว","หวยเวียดนาม","หวยมาเลย์","หุ้นไทยเย็น","หุ้นดาวน์โจน","นิเคอิเช้า","นิเคอิบ่าย","ฮั่งเส็งเช้า","ฮั่งเส็งบ่าย"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
 $url100 =["http://easylotto.in.th/line-bot/push-win.php","http://easylotto.in.th/line-bot/push-rood.php","http://easylotto.in.th/line-bot/push-seal.php"
 ,"http://easylotto.in.th/line-bot/push-puk.php","http://easylotto.in.th/line-bot/remind.php",
 "http://easylotto.in.th/line-bot/yeekee-bundle.php","http://easylotto.in.th/line-bot/yeekee-bundle-lo.php","http://easylotto.in.th/line-bot/push-rood-on.php"
-,"http://easylotto.in.th/line-bot/push-rood-lower.php","http://easylotto.in.th/line-bot/yeekee-drill.php"];
+,"http://easylotto.in.th/line-bot/push-rood-lower.php","http://easylotto.in.th/line-bot/yeekee-drill.php","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
+,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"];
 
 $urlget=["http://easylotto.in.th/line-bot/reviews-win.txt","http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
 "http://easylotto.in.th/line-bot/reviews-puk.txt","http://easylotto.in.th/line-bot/reviews-tong.txt"
 ,"http://easylotto.in.th/line-bot/reviews-on.txt","http://easylotto.in.th/line-bot/reviews-lo.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
-"http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/line-bot/reviews-drill.txt"];
+"http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/line-bot/reviews-drill.txt","http://easylotto.in.th/bot-lotto-all.php?lotto=1","http://easylotto.in.th/bot-lotto-all.php?lotto=2","http://easylotto.in.th/bot-lotto-all.php?lotto=4"
+,"http://easylotto.in.th/bot-lotto-all.php?lotto=5","http://easylotto.in.th/bot-lotto-all.php?lotto=3","http://easylotto.in.th/bot-lotto-all.php?lotto=6"
+,"http://easylotto.in.th/bot-lotto-all.php?lotto=7","http://easylotto.in.th/bot-lotto-all.php?lotto=8","http://easylotto.in.th/bot-lotto-all.php?lotto=9","http://easylotto.in.th/bot-lotto-all.php?lotto=10"];
 
 $remove100=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-rood.php",
 "http://easylotto.in.th/line-bot/del-bot.php","http://easylotto.in.th/line-bot/del-tong.php",
 "http://easylotto.in.th/line-bot/del-mux-on.php","http://easylotto.in.th/line-bot/del-mux-lo.php","http://easylotto.in.th/line-bot/del-rood.php"
-,"http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-drill.php"];
+,"http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-drill.php","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"];
 
 
 if($id==$id100){
