@@ -15,7 +15,7 @@ $userid = $arrayJson['events'][0]['source']['userId'];
 
 $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 $idcheck1 ='C000b66e767252bdc4efb43fb116d798e';
-//$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
 $idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 //$idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 date_default_timezone_set("Asia/Bangkok");
