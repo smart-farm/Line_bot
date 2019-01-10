@@ -21,7 +21,7 @@ $idfree2 ='C000b66e767252bdc4efb43fb116d798e';
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
 
-if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
+/*if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
  if($id==$idcheck){ //||$id==$idcheck1
 if(time()>=strtotime("00:00:00") && time()<strtotime("06:00:00")){
 
@@ -34,7 +34,7 @@ if(time()>=strtotime("00:00:00") && time()<strtotime("06:00:00")){
  ==============================
 easylotto.in.th";
 pushMsg($arrayHeader,$arrayPostData);
-$idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
+//$idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
 //$idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
 }else{
 //$idfree2 ='C000b66e767252bdc4efb43fb116d798e';
@@ -42,7 +42,7 @@ $idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
 
 }
 }
-}
+}*/
 
 
 //$id='C22521a49473a70959e78d41650314a50';
