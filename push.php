@@ -13,7 +13,7 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 //$checkid ='Cb2a0ab426f804a15c8233782ea28805d':
 $userid = $arrayJson['events'][0]['source']['userId'];
 
-//$idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
+$idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 $idcheck1 ='C000b66e767252bdc4efb43fb116d798e';
 //$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
 $idfree2 ='C000b66e767252bdc4efb43fb116d798e';
@@ -22,7 +22,7 @@ date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
 
 if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
- if($id==$idcheck1){ //||$id==$idcheck1
+ if($id==$idcheck){ //||$id==$idcheck1
 if(time()>=strtotime("00:00:00") && time()<strtotime("06:00:00")){
 
    $arrayPostData['to'] =$id;
@@ -34,11 +34,11 @@ if(time()>=strtotime("00:00:00") && time()<strtotime("06:00:00")){
  ==============================
 easylotto.in.th";
 pushMsg($arrayHeader,$arrayPostData);
-//$idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
-$idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
+$idfree ='C6158fb947c96653e2706ce8eb2dbae9bbbbbb';
+//$idfree2 ='C000b66e767252bdc4efb43fb116d798eeee';
 }else{
-$idfree2 ='C000b66e767252bdc4efb43fb116d798e';
-//$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
+//$idfree2 ='C000b66e767252bdc4efb43fb116d798e';
+$idfree ='C6158fb947c96653e2706ce8eb2dbae9b';
 
 }
 }
@@ -187,7 +187,7 @@ $url4=["http://easylotto.in.th/line-bot/reviews-win.txt","http://easylotto.in.th
 $remove1=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-rood.php",
 "http://easylotto.in.th/line-bot/del-bot.php","http://easylotto.in.th/line-bot/del-drill.php","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"];
 
-if($id==$idfree2){
+if($id==$idfree){
   for($i = 0; $i<count($formula2);$i++){
     if($message==$formula2[$i]){
 
