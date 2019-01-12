@@ -12,6 +12,48 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 
 $userid = $arrayJson['events'][0]['source']['userId'];
 
+if($arrayJson['events'][0]['type']=='memberJoined'){
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="ยินดีต้อนรับจ้า
+  คำสั่งเลขยี่กี เว็บหวย
+ ➖➖➖➖➖➖➖➖
+ 1. เลขวิน
+ 2. เลขรูด
+ 3. เลขเสียว้
+ 4. เลขปัก
+ 5. เลขรูดบน
+ 6. เลขรูดล่าง
+ 7. เลขเจาะ
+ 8. เลขตอง
+
+ คำสั่งเลขหุ้น/หวย
+ ➖➖➖➖➖➖➖➖
+ 7. หวยรัฐบาล
+ 8. หวยลาว
+ 9. หวยเวียดนาม
+ 10. หวยมาเลย์
+ 11. หุ้นไทยเย็น
+ 12. หุ้นดาวน์โจน
+ 13. นิเคอิเช้า
+ 14. นิเคอิบ่าย
+ 15. ฮั่งเส็งเช้า
+ 16. ฮั่งเส็งบ่าย
+ ➖➖➖➖➖➖➖➖
+ สนใจสูตรอื่นๆ อีก 14 สูตร
+ สมัครผ่านลิงค์เรา : https://bit.ly/2QTYwtT
+ หรือสมัครรายเดือน : https://bit.ly/2GXD437";
+  pushMsg($arrayHeader,$arrayPostData);
+}
+if($arrayJson['events'][0]['type']=='memberLeft'){
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="ขอบคุณที่ใช้บริการค่ะ";
+  $arrayPostData['messages'][1]['type'] = "sticker";
+  $arrayPostData['messages'][1]['packageId'] = "2";
+  $arrayPostData['messages'][1]['stickerId'] = "34";
+  pushMsg($arrayHeader,$arrayPostData);
+}
 
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
