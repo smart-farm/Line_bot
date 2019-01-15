@@ -244,6 +244,13 @@ for($i = 0; $i<count($formulacheck);$i++) {
     }
 }
 
+if($message=="gettokenุ"){
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] = $id;
+  pushMsg($arrayHeader,$arrayPostData);
+
+}
 
 /*
 if($message=="หมดอายุ"){
