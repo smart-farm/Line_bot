@@ -92,6 +92,7 @@ $idfree='Cf291e9b801e5e4e6a0993ae2ee8de927';
 
 //$idfree='Cf291e9b801e5e4e6a0993ae2ee8de927';
 $idvip='Ca1435d8d07b5c377b3483c958cbc0829';
+$id100='C3ba3dd1c7d335872f26da126b152fd8b';
 
 
 
@@ -143,6 +144,55 @@ for($i = 0; $i<count($formula);$i++) {
           pushMsg($arrayHeader,$arrayPostData);
          $requal = file_get_contents($remove[$i]);
 
+
+}else{
+  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://easylotto.in.th";
+  $arrayPostData['messages'][1]['type'] = "sticker";
+  $arrayPostData['messages'][1]['packageId'] = "2";
+  $arrayPostData['messages'][1]['stickerId'] = "34";
+  pushMsg($arrayHeader,$arrayPostData);
+
+}
+      }
+    }
+}
+
+
+$formula100 =["เลขวิน","เลขรูด","เลขเสียว","เลขปัก","เลขตอง","เลขมัดบน","เลขมัดล่าง","เลขรูดบน","เลขรูดล่าง","เลขเจาะ","หวยรัฐบาล","หวยลาว","หวยเวียดนาม","หวยมาเลย์","หุ้นไทยเย็น","หุ้นดาวน์โจน","นิเคอิเช้า","นิเคอิบ่าย","ฮั่งเส็งเช้า","ฮั่งเส็งบ่าย"]; //,,"เลขวินบน","เลขวินล่าง","เลขรูดบน","เลขรูดล่าง"
+$url100 =["http://easylotto.in.th/line-huay/push-win.php","http://easylotto.in.th/line-huay/push-rood.php","http://easylotto.in.th/line-huay/push-seal.php"
+,"http://easylotto.in.th/line-huay/push-puk.php","http://easylotto.in.th/line-huay/remind.php",
+"http://easylotto.in.th/line-huay/yeekee-bundle.php","http://easylotto.in.th/line-huay/yeekee-bundle-lo.php","http://easylotto.in.th/line-huay/push-rood-on.php"
+,"http://easylotto.in.th/line-huay/push-rood-lower.php","http://easylotto.in.th/line-huay/yeekee-drill.php","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
+,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"];
+
+$urlget=["http://easylotto.in.th/line-huay/reviews-win.txt","http://easylotto.in.th/line-huay/reviews-rood.txt","http://easylotto.in.th/line-huay/reviews-rood.txt",
+"http://easylotto.in.th/line-huay/reviews-puk.txt","http://easylotto.in.th/line-huay/reviews-tong.txt"
+,"http://easylotto.in.th/line-huay/reviews-on.txt","http://easylotto.in.th/line-huay/reviews-lo.txt","http://easylotto.in.th/line-huay/reviews-rood.txt",
+"http://easylotto.in.th/line-huay/reviews-rood.txt","http://easylotto.in.th/line-huay/reviews-drill.txt","http://easylotto.in.th/bot-lotto-all.php?lotto=1","http://easylotto.in.th/bot-lotto-all.php?lotto=2","http://easylotto.in.th/bot-lotto-all.php?lotto=4"
+,"http://easylotto.in.th/bot-lotto-all.php?lotto=5","http://easylotto.in.th/bot-lotto-all.php?lotto=3","http://easylotto.in.th/bot-lotto-all.php?lotto=6"
+,"http://easylotto.in.th/bot-lotto-all.php?lotto=7","http://easylotto.in.th/bot-lotto-all.php?lotto=8","http://easylotto.in.th/bot-lotto-all.php?lotto=9","http://easylotto.in.th/bot-lotto-all.php?lotto=10"];
+
+$remove100=["http://easylotto.in.th/line-huay/del-win.php","http://easylotto.in.th/line-huay/del-rood.php","http://easylotto.in.th/line-huay/del-rood.php",
+"http://easylotto.in.th/line-huay/del-bot.php","http://easylotto.in.th/line-huay/del-tong.php",
+"http://easylotto.in.th/line-huay/del-mux-on.php","http://easylotto.in.th/line-huay/del-mux-lo.php","http://easylotto.in.th/line-huay/del-rood.php"
+,"http://easylotto.in.th/line-huay/del-rood.php","http://easylotto.in.th/line-huay/del-drill.php","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"];
+
+
+if($id==$id100){
+for($i = 0; $i<count($formula100);$i++) {
+    if($message==$formula100[$i]){
+
+         $requal = file_get_contents($url100[$i]);
+         if($requal!=""){
+         $content = file_get_contents($urlget[$i], "\xEF\xBB\xBF");
+          $content=strip_tags($content);
+          $arrayPostData['to'] = $id;
+          $arrayPostData['messages'][0]['type'] = "text";
+          $arrayPostData['messages'][0]['text'] = $content;
+          pushMsg($arrayHeader,$arrayPostData);
+         $requal = file_get_contents($remove100[$i]);
 
 }else{
   $arrayPostData['to'] = $id;
