@@ -55,6 +55,13 @@ if($arrayJson['events'][0]['type']=='memberLeft'){
   pushMsg($arrayHeader,$arrayPostData);
 }
 
+if($message == "gettoken"){
+    $arrayPostData['to'] = $id;
+    $arrayPostData['messages'][0]['type'] = "text";
+    $arrayPostData['messages'][0]['text'] =$id;
+    pushMsg($arrayHeader,$arrayPostData);
+}
+
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
 $idcheck='Cf291e9b801e5e4e6a0993ae2ee8de927';
@@ -244,13 +251,7 @@ for($i = 0; $i<count($formulacheck);$i++) {
     }
 }
 
-if($message=="gettokenุ"){
-  $arrayPostData['to'] = $id;
-  $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] = $id;
-  pushMsg($arrayHeader,$arrayPostData);
 
-}
 
 /*
 if($message=="หมดอายุ"){
