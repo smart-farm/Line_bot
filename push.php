@@ -8,7 +8,7 @@ $arrayHeader[] = "Authorization: Bearer {$accessToken}";
 //รับข้อความจากผู้ใช้
 
 $message = $arrayJson['events'][0]['message']['text'];
-$message = ereg_replace('[[:space:]]+', '', trim($message));
+//$message = ereg_replace('[[:space:]]+', '', trim($message));
 
 //รับ id ของผู้ใช้
 $id = $arrayJson['events'][0]['source']['groupId'];
