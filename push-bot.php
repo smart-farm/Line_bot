@@ -20,7 +20,7 @@ if($arrayJson['events'][0]['type']=='memberJoined'){
  ➖➖➖➖➖➖➖➖
  1. เลขวิน
  2. เลขรูด
- 3. เลขเสียว้
+ 3. เลขเสียว
  4. เลขปัก
  5. เลขรูดบน
  6. เลขรูดล่าง
@@ -42,7 +42,7 @@ if($arrayJson['events'][0]['type']=='memberJoined'){
  ➖➖➖➖➖➖➖➖
  สนใจสูตรอื่นๆ อีก 14 สูตร
  สมัครผ่านลิงค์เรา : https://bit.ly/2QTYwtT
- หรือสมัครรายเดือน : https://bit.ly/2GXD437";
+";
   pushMsg($arrayHeader,$arrayPostData);
 }
 if($arrayJson['events'][0]['type']=='memberLeft'){
