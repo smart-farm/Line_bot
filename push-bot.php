@@ -67,14 +67,14 @@ date_default_timezone_set("Asia/Bangkok");
 $idcheck='Cf291e9b801e5e4e6a0993ae2ee8de927';
 //if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
  if($id==$idcheck){ //||$id==$idcheck1
-if(time()>=strtotime("00:00:00") && time()<strtotime("08:30:00")){
+if(time()>=strtotime("00:00:00") && time()<strtotime("07:30:00")){
 
    $arrayPostData['to'] =$id;
    $arrayPostData['messages'][0]['type'] = "text";
    $arrayPostData['messages'][0]['text'] ="
  ==============================
         ระบบเปิดให้บริการตั้งแต่เวลา
-               08.30-00.00
+               07.30-00.00
  ==============================
 easylotto.in.th";
 pushMsg($arrayHeader,$arrayPostData);
