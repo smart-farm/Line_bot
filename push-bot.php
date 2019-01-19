@@ -64,7 +64,7 @@ if($arrayJson['events'][0]['type']=='memberLeft'){
 
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
-$idcheck='Cf291e9b801e5e4e6a0993ae2ee8de927';
+$idcheck='Cf291e9b801e5e4e6a0993ae2ee8de927xxx';
 //if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
  if($id==$idcheck){ //||$id==$idcheck1
 if(time()>=strtotime("00:00:00") && time()<strtotime("07:30:00")){
