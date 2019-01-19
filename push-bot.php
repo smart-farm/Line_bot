@@ -16,31 +16,11 @@ if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
   $arrayPostData['messages'][0]['text'] ="ยินดีต้อนรับจ้า
-  คำสั่งเลขยี่กี เว็บหวย
- ➖➖➖➖➖➖➖➖
- 1. เลขวิน
- 2. เลขรูด
- 3. เลขเสียว
- 4. เลขปัก
- 5. เลขรูดบน
- 6. เลขรูดล่าง
- 7. เลขเจาะ
- 8. เลขตอง
-
- คำสั่งเลขหุ้น/หวย
- ➖➖➖➖➖➖➖➖
- 7. หวยรัฐบาล
- 8. หวยลาว
- 9. หวยเวียดนาม
- 10. หวยมาเลย์
- 11. หุ้นไทยเย็น
- 12. หุ้นดาวน์โจน
- 13. นิเคอิเช้า
- 14. นิเคอิบ่าย
- 15. ฮั่งเส็งเช้า
- 16. ฮั่งเส็งบ่าย
- ➖➖➖➖➖➖➖➖
- สนใจสูตรอื่นๆ อีก 14 สูตร
+  หากสนใจใช้งานโปรแกรมคำนวณยี่กี
+ติดต่อทีมงานได้คะ ราคา 350 บ/ด.
+หรือใช้งานฟรีด้วยการเล่นผ่านลิงค์
+ของเราก็มีให้บริการค่ะ.
+easylotto.in.th
  สมัครผ่านลิงค์เรา : https://bit.ly/2QTYwtT
 ";
   pushMsg($arrayHeader,$arrayPostData);
@@ -64,7 +44,7 @@ if($arrayJson['events'][0]['type']=='memberLeft'){
 
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
-$idcheck='Cf291e9b801e5e4e6a0993ae2ee8de927xxx';
+$idcheck='Cf291e9b801e5e4e6a0993ae2ee8de927';
 //if($message=="เลขวิน"||$message=="เลขรูด"||$message=="เลขเสียว"||$message=="เลขปัก"||$message=="เลขเจาะ"){
  if($id==$idcheck){ //||$id==$idcheck1
 if(time()>=strtotime("00:00:00") && time()<strtotime("07:30:00")){
