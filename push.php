@@ -97,7 +97,7 @@ $idadmin ='C701d3b84cd8afc5d2800f7b1b0f0b09c';
 //$idvip ='C22521a49473a70959e78d41650314a50';
 //$id199 ='C678b1d0f7f216ba96cf8b6e784bac718xxx';
 //ห้องใหม่
-$idvip1='Cfee29536f26d44c081fe4eeb08a5400exx';
+$idvip1='Cfee29536f26d44c081fe4eeb08a5400e';
 $idvip2='Cd95550591ae6ca7084af635c0d822c59';
 $id100='Cb12ff2198b553dd2fd950432db7c852d';
 
@@ -156,7 +156,10 @@ for($i = 0; $i<count($formula);$i++) {
          $content = file_get_contents($url1[$i], "\xEF\xBB\xBF");
           $arrayPostData['to'] = $id;
           $arrayPostData['messages'][0]['type'] = "text";
-          $arrayPostData['messages'][0]['text'] = $content;
+          $arrayPostData['messages'][0]['text'] ="เรียนสมาชิก : เรื่องการวางเลขแบบใหม่
+คืนนี้ทีมงานจะทดลองการวางเลขแบบใหม่ ให้โปรแกรมแสดงผลรอบเดียว 6-8 สูตร (ปัก เสียว รูด วิน เจาะ ตอง ไหล มัด) แบบรอบเดียวจบทุกๆ 15 นาที
+ตามที่เจสออกผลรางวัล โดยที่สมาชิกไม่ต้องพิมพ์สั่งเลขใดๆ ออกมาแล้ว เพื่อไม่เป็นการรบกวนสมาธิท่านที่กำลังติดตามเลขสูตรนั้นๆ อยู่และ ทางทีมงานจะได้มีโอกาสมาเสนอ
+แนะนำการใช้โปรแกรมแบบเจาะลึก พาเล่น พาถอนโดยแอตมิน และเราจะได้คุยกันมากขึ้น.";
           pushMsg($arrayHeader,$arrayPostData);
          $requal = file_get_contents($remove[$i]);
 
