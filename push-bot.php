@@ -20,8 +20,8 @@ if($arrayJson['events'][0]['type']=='memberJoined'){
 ติดต่อทีมงานได้คะ ราคา 350 บ/ด.
 หรือใช้งานฟรีด้วยการเล่นผ่านลิงค์
 ของเราก็มีให้บริการค่ะ.
-easylotto.in.th
  สมัครผ่านลิงค์เรา : https://bit.ly/2QTYwtT
+ easylotto.in.th
 ";
   pushMsg($arrayHeader,$arrayPostData);
 }
