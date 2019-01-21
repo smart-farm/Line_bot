@@ -156,7 +156,7 @@ if($id==$idvip1||$id==$idadmin||$userid==$useradmin1||$userid==$useradmin2||$use
 for($i = 0; $i<count($formula);$i++) {
     if($message==$formula[$i]){
 
-         //$requal = file_get_contents($url[$i]);
+         $requal = file_get_contents($url[$i]);
          if($requal!=""){
          $content = file_get_contents($url1[$i], "\xEF\xBB\xBF");
           $arrayPostData['to'] = $id;
