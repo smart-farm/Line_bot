@@ -98,7 +98,7 @@ $formula =["หวยรัฐบาล","หวยลาว","หวยเว�
 ,"http://easylotto.in.th/line-bot/line_winon.php?formula=ph2","http://easylotto.in.th/line-bot/line_winon.php?formula=pl0","http://easylotto.in.th/line-bot/line_winon.php?formula=pl1"
 ,"http://easylotto.in.th/line-bot/yeekee-drill.php",
 */
-$url =["http://easylotto.in.th""http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
+$url =["http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"];
