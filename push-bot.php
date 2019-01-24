@@ -35,12 +35,12 @@ if($arrayJson['events'][0]['type']=='memberLeft'){
   pushMsg($arrayHeader,$arrayPostData);
 }
 
-/*if($message == "gettoken"){
+if($message == "gettoken"){
     $arrayPostData['to'] = $id;
     $arrayPostData['messages'][0]['type'] = "text";
     $arrayPostData['messages'][0]['text'] =$id;
     pushMsg($arrayHeader,$arrayPostData);
-}*/
+}
 
 date_default_timezone_set("Asia/Bangkok");
  $today=date("Y-m-d");
