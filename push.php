@@ -37,7 +37,7 @@ $displayName = $profile['displayName'];
 if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] =$displayName."
+  $arrayPostData['messages'][0]['text'] ="
 กฏกติกากลุ่มอีซี่ล็อตโต้
 =============
 1. ห้ามวางเลขหรือสูตรใดๆ
