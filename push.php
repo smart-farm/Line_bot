@@ -12,7 +12,7 @@ $message = $arrayJson['events'][0]['message']['text'];
 
 //รับ id ของผู้ใช้
 $id = $arrayJson['events'][0]['source']['groupId'];
-/*
+
 if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
@@ -35,7 +35,7 @@ if($arrayJson['events'][0]['type']=='memberLeft'){
   $arrayPostData['messages'][1]['stickerId'] = "34";
   pushMsg($arrayHeader,$arrayPostData);
 }
-*/
+
 
 //$idsmile ='Cd8562369e04d45495e12c8c830ea3863';
 //$checkid ='Cb2a0ab426f804a15c8233782ea28805d':
