@@ -14,12 +14,12 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 
 $userid = $arrayJson['events'][0]['source']['userId'];
 
-/*
+
 $res = $bot->getProfile($userId);
 if ($res->isSucceeded()) {
 $profile = $res->getJSONDecodedBody();
 $displayName = $profile['displayName'];
-}*/
+}
 
 if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
