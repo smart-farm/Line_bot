@@ -11,28 +11,15 @@ $message = $arrayJson['events'][0]['message']['text'];
 
 //รับ id ของผู้ใช้
 $id = $arrayJson['events'][0]['source']['groupId'];
-$userid = $arrayJson['events'][0]['source']['userId'];
 
-/*function getDisplayname($userId){
 
-return request({
- method: 'GET',
- url:'https://api.line.me/v2/bot/profile/${userId}',
- json: true
-}).then((profile) =>{
-res.send(profile.displayname);
-return profile.displayname;
 
-}).catch((error) => {
-  return res.status(500).send(error);
-});
-}*/
-
+/*
 $res = $bot->getProfile($userId);
 if ($res->isSucceeded()) {
 $profile = $res->getJSONDecodedBody();
 $displayName = $profile['displayName'];
-}
+}*/
 
 if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
@@ -68,7 +55,7 @@ if($arrayJson['events'][0]['type']=='memberLeft'){
 //$idsmile ='Cd8562369e04d45495e12c8c830ea3863';
 //$checkid ='Cb2a0ab426f804a15c8233782ea28805d':
 
-
+$userid = $arrayJson['events'][0]['source']['userId'];
 $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 $idcheck1 ='C000b66e767252bdc4efb43fb116d798e';
 $idfree ='C6158fb947c96653e2706ce8eb2dbae9bxxx';
@@ -148,7 +135,7 @@ $url1=["http://easylotto.in.th/bot-lotto-all.php?lotto=1","http://easylotto.in.t
 https://keep.line.me/s/S0Es1nujIivnH3lGSuyexQQ4kXwkldz7ERxR1xGVMuU
 เข้าสู่หน้าโปรแกรมคลิกที่นี้ :easylotto.in.th
 
-*/
+
 $remove=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-rood.php",
 "http://easylotto.in.th/line-bot/del-bot.php","http://easylotto.in.th/line-bot/del-tong.php",
 "http://easylotto.in.th/line-bot/del-mux-on.php","http://easylotto.in.th/line-bot/del-mux-lo.php","http://easylotto.in.th/line-bot/del-rood.php"
@@ -159,7 +146,7 @@ $remove=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/l
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"];
-
+*/
 $useradmin1="U890a31fb1c5c8f07cc06e8ae47202f75";
 $useradmin2="U2f4fe4ca40895f6913b908a4c6fdcb95";
 $useradmin3="U6d0021f8e019a176ff0c11a6b6677bcb";
