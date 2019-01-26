@@ -12,7 +12,7 @@ $message = $arrayJson['events'][0]['message']['text'];
 //รับ id ของผู้ใช้
 $id = $arrayJson['events'][0]['source']['groupId'];
 
-
+$userid = $arrayJson['events'][0]['source']['userId'];
 
 /*
 $res = $bot->getProfile($userId);
@@ -55,7 +55,7 @@ if($arrayJson['events'][0]['type']=='memberLeft'){
 //$idsmile ='Cd8562369e04d45495e12c8c830ea3863';
 //$checkid ='Cb2a0ab426f804a15c8233782ea28805d':
 
-$userid = $arrayJson['events'][0]['source']['userId'];
+
 $idcheck ='C6158fb947c96653e2706ce8eb2dbae9b';
 $idcheck1 ='C000b66e767252bdc4efb43fb116d798e';
 $idfree ='C6158fb947c96653e2706ce8eb2dbae9bxxx';
