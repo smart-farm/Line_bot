@@ -18,15 +18,11 @@ $userid = $arrayJson['events'][0]['source']['userId'];
 
 if($arrayJson['events'][0]['type']=='memberJoined'){
 
-  $res = $bot->getProfile($userId);
-  if ($res->isSucceeded()) {
-  $profile = $res->getJSONDecodedBody();
-  $displayName = $profile['displayName'];
-  }
+  
 
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] =$displayName."
+  $arrayPostData['messages'][0]['text'] ="
 กฏกติกากลุ่มอีซี่ล็อตโต้
 =============
 1. ห้ามวางเลขหรือสูตรใดๆ
