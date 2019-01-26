@@ -13,7 +13,7 @@ $message = $arrayJson['events'][0]['message']['text'];
 $id = $arrayJson['events'][0]['source']['groupId'];
 $userid = $arrayJson['events'][0]['source']['userId'];
 
-function getDisplayname($userId){
+/*function getDisplayname($userId){
 
 return request({
  method: 'GET',
@@ -26,12 +26,18 @@ return profile.displayname;
 }).catch((error) => {
   return res.status(500).send(error);
 });
+}*/
+
+$res = $bot->getProfile($userId);
+if ($res->isSucceeded()) {
+$profile = $res->getJSONDecodedBody();
+$displayName = $profile['displayName'];
 }
 
 if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] =getDisplayname($userid)."
+  $arrayPostData['messages'][0]['text'] =$displayName."
 กฏกติกากลุ่มอีซี่ล็อตโต้
 =============
 1. ห้ามวางเลขหรือสูตรใดๆ
