@@ -13,7 +13,7 @@ $message = $arrayJson['events'][0]['message']['text'];
 $id = $arrayJson['events'][0]['source']['groupId'];
 $userid = $arrayJson['events'][0]['source']['userId'];
 
-function getDisplayname(userId){
+function getDisplayname($userId){
 
 return request({
  method: 'GET',
@@ -23,12 +23,9 @@ return request({
 res.send(profile.displayname);
 return profile.displayname;
 
-}).catch((error) =>{
+}).catch((error) => {
   return res.status(500).send(error);
 });
-
-
-
 }
 
 if($arrayJson['events'][0]['type']=='memberJoined'){
