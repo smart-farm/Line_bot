@@ -15,20 +15,6 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 $userid = $arrayJson['events'][0]['source']['userId'];
 
 
-function getDisplayname($userId){
-
-return request({
- method: 'GET',
- url:'https://api.line.me/v2/bot/profile/${userId}',
- json: true
-}).then((profile) =>{
-res.send(profile.displayname);
-return profile.displayname;
-
-}).catch((error) => {
-  return res.status(500).send(error);
-});
-}
 
 if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
