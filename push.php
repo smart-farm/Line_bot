@@ -28,7 +28,7 @@ if($arrayJson['events'][0]['type']=='memberJoined'){
 1. คู่มือการใช้งาน : http://bit.ly/howto-easy
 2. จ่ายเงิน/ต่ออายุ ไปที่นี่ : http://bit.ly/payment-est
 3. เข้าโปรแกรม ไปที่นี่ : http://easylotto.in.th
-4. รบกวน “อ่านโน๊ต” ทุกโพสในห้อง!
+4. รบกวน อ่านโน๊ต ทุกโพสในห้อง!
 5. พบปัญหาการใช้งานติดต่อแอตมิน";
   pushMsg($arrayHeader,$arrayPostData);
 }
