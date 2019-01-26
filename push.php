@@ -16,20 +16,14 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="กฏกติกากลุ่มอีซี่ล็อตโต้
-=============
-1. ห้ามวางเลขหรือสูตรใดๆ
-2. ห้ามดึงบุคลอื่นเข้ามาในกลุ่ม
-3. ห้ามโพสรับสมาชิกหรือวางลิงค์
-4. ไม่อนุญาตให้โฆษณาใดๆ ทั้งสิ้น
-
-สมาชิกใหม่โปรดอ่าน
-=============
-1. คู่มือการใช้งาน : http://bit.ly/howto-easy
-2. จ่ายเงิน/ต่ออายุ ไปที่นี่ : http://bit.ly/payment-est
-3. เข้าโปรแกรม ไปที่นี่ : http://easylotto.in.th
-4. รบกวน อ่านโน๊ต ทุกโพสในห้อง!
-5. พบปัญหาการใช้งานติดต่อแอตมิน";
+  $arrayPostData['messages'][0]['text'] ="ยินดีต้อนรับจ้า
+  คู่มือการใช้งานโปรแกรม
+  ------------------------
+  https://keep.line.me/s/S0Es1nujIivnH3lGSuyexQQ4kXwkldz7ERxR1xGVMuU
+  ------------------------
+  โปรดอ่านในโน๊ต..
+  ------------------------
+  easylotto.in.th";
   pushMsg($arrayHeader,$arrayPostData);
 }
 if($arrayJson['events'][0]['type']=='memberLeft'){
