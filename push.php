@@ -12,14 +12,21 @@ $message = $arrayJson['events'][0]['message']['text'];
 //รับ id ของผู้ใช้
 $id = $arrayJson['events'][0]['source']['groupId'];
 
-$userid = $arrayJson['events'][0]['source']['displayName'];
+$userid = $arrayJson['events'][0]['source']['userId'];
 
 
 
 if($arrayJson['events'][0]['type']=='memberJoined'){
+
+  $res = $bot->getProfile($userId);
+  if ($res->isSucceeded()) {
+  $profile = $res->getJSONDecodedBody();
+  $displayName = $profile['displayName'];
+  }
+
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] =$userid."
+  $arrayPostData['messages'][0]['text'] =$displayName."
 กฏกติกากลุ่มอีซี่ล็อตโต้
 =============
 1. ห้ามวางเลขหรือสูตรใดๆ
