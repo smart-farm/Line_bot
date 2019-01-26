@@ -16,14 +16,20 @@ $id = $arrayJson['events'][0]['source']['groupId'];
 if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="ยินดีต้อนรับจ้า
-  คู่มือการใช้งานโปรแกรม
-  ------------------------
-  https://keep.line.me/s/S0Es1nujIivnH3lGSuyexQQ4kXwkldz7ERxR1xGVMuU
-  ------------------------
-  โปรดอ่านในโน๊ต..
-  ------------------------
-  easylotto.in.th";
+  $arrayPostData['messages'][0]['text'] ="กฏกติกากลุ่มอีซี่ล็อตโต้
+=============
+1. ห้ามวางเลขหรือสูตรใดๆ
+2. ห้ามดึงบุคลอื่นเข้ามาในกลุ่ม
+3. ห้ามโพสรับสมาชิกหรือวางลิงค์
+4. ไม่อนุญาตให้โฆษณาใดๆ ทั้งสิ้น
+
+สมาชิกใหม่โปรดอ่าน
+=============
+1. คู่มือการใช้งาน : http://bit.ly/howto-easy
+2. จ่ายเงิน/ต่ออายุ ไปที่นี่ : http://bit.ly/payment-est
+3. เข้าโปรแกรม ไปที่นี่ : http://easylotto.in.th
+4. รบกวน “อ่านโน๊ต” ทุกโพสในห้อง!
+5. พบปัญหาการใช้งานติดต่อแอตมิน";
   pushMsg($arrayHeader,$arrayPostData);
 }
 if($arrayJson['events'][0]['type']=='memberLeft'){
@@ -144,7 +150,13 @@ https://keep.line.me/s/S0Es1nujIivnH3lGSuyexQQ4kXwkldz7ERxR1xGVMuU
 เข้าสู่หน้าโปรแกรมคลิกที่นี้ :easylotto.in.th
 
 */
-$remove=["http://easylotto.in.th"
+$remove=["http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-rood.php",
+"http://easylotto.in.th/line-bot/del-bot.php","http://easylotto.in.th/line-bot/del-tong.php",
+"http://easylotto.in.th/line-bot/del-mux-on.php","http://easylotto.in.th/line-bot/del-mux-lo.php","http://easylotto.in.th/line-bot/del-rood.php"
+,"http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th",,"http://easylotto.in.th/line-bot/del-winon.php"
+,"http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php"
+,"http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php"
+,"http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-winon.php","http://easylotto.in.th/line-bot/del-drill.php"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"];
