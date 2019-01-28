@@ -18,7 +18,7 @@ $userid = $arrayJson['events'][0]['source']['userId'];
 
 if($arrayJson['events'][0]['type']=='memberJoined'){
 
-  
+
 
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
@@ -32,11 +32,16 @@ if($arrayJson['events'][0]['type']=='memberJoined'){
 
 สมาชิกใหม่โปรดอ่าน
 =============
-1. คู่มือการใช้งาน : http://bit.ly/howto-easy
-2. จ่ายเงิน/ต่ออายุ ไปที่นี่ : http://bit.ly/payment-est
-3. เข้าโปรแกรม ไปที่นี่ : http://easylotto.in.th
-4. รบกวน อ่านโน๊ต ทุกโพสในห้อง!
-5. พบปัญหาการใช้งานติดต่อแอตมิน";
+1. จ่ายเงิน/ต่ออายุ ไปที่นี่ : http://bit.ly/payment-est
+2. เข้าโปรแกรม ไปที่นี่ : http://easylotto.in.th
+3. รบกวน อ่านโน๊ต ทุกโพสในห้อง!
+4. พบปัญหาการใช้งานติดต่อแอตมิน
+
+คู่มือการใช้งานและเทคนิคต่างๆ
+• คู่มือการใช้งาน >> http://bit.ly/2ThYqKv
+• การใช้งานโปรแกรมอื่นๆ >> http://bit.ly/2TmaoCU
+• เทคนิค/เคล็ดลับ การแทงเลขต่างๆ >> http://bit.ly/2S9WCpl
+• ติดต่อทีมงาน >> http://bit.ly/2MysQFJ";
   pushMsg($arrayHeader,$arrayPostData);
 }
 if($arrayJson['events'][0]['type']=='memberLeft'){
