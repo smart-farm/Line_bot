@@ -22,8 +22,7 @@ if($arrayJson['events'][0]['type']=='memberJoined'){
 
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="
-กฏกติกากลุ่มอีซี่ล็อตโต้
+  $arrayPostData['messages'][0]['text'] ="กฏกติกากลุ่มอีซี่ล็อตโต้
 =============
 1. ห้ามวางเลขหรือสูตรใดๆ
 2. ห้ามดึงบุคลอื่นเข้ามาในกลุ่ม
@@ -32,12 +31,8 @@ if($arrayJson['events'][0]['type']=='memberJoined'){
 
 สมาชิกใหม่โปรดอ่าน
 =============
-1. จ่ายเงิน/ต่ออายุ ไปที่นี่ : http://bit.ly/payment-est
-2. เข้าโปรแกรม ไปที่นี่ : http://easylotto.in.th
-3. รบกวน อ่านโน๊ต ทุกโพสในห้อง!
-4. พบปัญหาการใช้งานติดต่อแอตมิน
-
-คู่มือการใช้งานและเทคนิคต่างๆ
+• จ่ายเงิน/ต่ออายุ ไปที่นี่ : http://bit.ly/payment-est
+• เข้าโปรแกรม ไปที่นี่ : http://easylotto.in.th
 • คู่มือการใช้งาน >> http://bit.ly/2ThYqKv
 • การใช้งานโปรแกรมอื่นๆ >> http://bit.ly/2TmaoCU
 • เทคนิค/เคล็ดลับ การแทงเลขต่างๆ >> http://bit.ly/2S9WCpl
