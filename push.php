@@ -241,7 +241,15 @@ $content = file_get_contents("http://easylotto.in.th/line-bot/user-endtime.txt",
 }
 }
 
+if($message=="gettokenุ"){
 
+
+ $arrayPostData['to'] = $id;
+ $arrayPostData['messages'][0]['type'] = "text";
+ $arrayPostData['messages'][0]['text'] = $id;
+ pushMsg($arrayHeader,$arrayPostData);
+
+}
 
 
 
