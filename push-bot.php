@@ -15,13 +15,21 @@ $userid = $arrayJson['events'][0]['source']['userId'];
 if($arrayJson['events'][0]['type']=='memberJoined'){
   $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="ยินดีต้อนรับจ้า
-  หากสนใจใช้งานโปรแกรมคำนวณยี่กี
-ติดต่อทีมงานได้คะ ราคา 350 บ/ด.
-หรือใช้งานฟรีด้วยการเล่นผ่านลิงค์
-ของเราก็มีให้บริการค่ะ.
- สมัครผ่านลิงค์เรา : https://bit.ly/2QTYwtT
- easylotto.in.th
+  $arrayPostData['messages'][0]['text'] ="กฏกติกากลุ่มอีซี่ล็อตโต้
+=============
+1. ห้ามวางเลขหรือสูตรใดๆ
+2. ห้ามดึงบุคลอื่นเข้ามาในกลุ่ม
+3. ห้ามโพสรับสมาชิกหรือวางลิงค์
+4. ไม่อนุญาตให้โฆษณาใดๆ ทั้งสิ้น
+
+สมาชิกใหม่โปรดอ่าน
+=============
+• จ่ายเงิน/ต่ออายุ ไปที่นี่ : http://bit.ly/payment-est
+• เข้าโปรแกรม ไปที่นี่ : http://easylotto.in.th
+• คู่มือการใช้งาน >> http://bit.ly/2ThYqKv
+• การใช้งานโปรแกรมอื่นๆ >> http://bit.ly/2TmaoCU
+• เทคนิค/เคล็ดลับ การแทงเลขต่างๆ >> http://bit.ly/2S9WCpl
+• ติดต่อทีมงาน >> http://bit.ly/2MysQFJ
 ";
   pushMsg($arrayHeader,$arrayPostData);
 }
