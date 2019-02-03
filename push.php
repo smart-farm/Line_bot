@@ -45,7 +45,7 @@ if($arrayJson['events'][0]['type']=='memberLeft'){
   $arrayPostData['messages'][0]['text'] ="ขอบคุณที่ใช้บริการค่ะ";
   $arrayPostData['messages'][1]['type'] = "sticker";
   $arrayPostData['messages'][1]['packageId'] = "2";
-  $arrayPostData['messages'][1]['stickerId'] = "34";
+  $arrayPostData['messages'][1]['stickerId'] = "42";
   pushMsg($arrayHeader,$arrayPostData);
 }
 
@@ -241,7 +241,8 @@ $content = file_get_contents("http://easylotto.in.th/line-bot/user-endtime.txt",
 }
 }
 
-if($message=="gettokenุ"){
+
+if($message=="gettoken"){
 
 
  $arrayPostData['to'] = $id;
@@ -250,7 +251,6 @@ if($message=="gettokenุ"){
  pushMsg($arrayHeader,$arrayPostData);
 
 }
-
 
 
 
