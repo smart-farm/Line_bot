@@ -9,36 +9,34 @@ $arrayHeader[] = "Authorization: Bearer {$accessToken}";
 $message = $arrayJson['events'][0]['message']['text'];
 //รับ id ของผู้ใช้
 $id = $arrayJson['events'][0]['source']['groupId'];
+$userid = $arrayJson['events'][0]['source']['userId'];
 
 
 
+if($message == "gettoken"){ //vip
+$content = file_get_contents("http://easylotto.in.th/line-bot/get-token.php?id=$id&userid=$userid&status=1");
 
 
+}if($message == "bot:ปิดการทำงาน"){
+  $content = file_get_contents("http://easylotto.in.th/line-bot/onoff.php?id=$id&userid=$userid&status=0");
 /*  $arrayPostData['to'] = $id;
   $arrayPostData['messages'][0]['type'] = "text";
-  $arrayPostData['messages'][0]['text'] ="คำสั่งในการเรียกเลข อยู่ช่วงเวลาปรับปรุง ขออภัยในความไม่สะดวกครับ ดูเลขเพิ่มเติมได้ที่ :http://www.phonenana.com";
+  $arrayPostData['messages'][0]['text'] ="ปิดการรายงานผลยี่กีแล้วจ้า !!";
   $arrayPostData['messages'][1]['type'] = "sticker";
   $arrayPostData['messages'][1]['packageId'] = "2";
-  $arrayPostData['messages'][1]['stickerId'] = "34";
+  $arrayPostData['messages'][1]['stickerId'] = "42";
   pushMsg($arrayHeader,$arrayPostData);*/
-
-if($message == "gettoken1"){ //vip
-$content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id&member=1");
-//header("Location:http://phonenana.com/line-bot/get-token.php?id=$id");
-$arrayPostData['to'] = $id;
-$arrayPostData['messages'][0]['type'] = "text";
-$arrayPostData['messages'][0]['text'] ="พร้อมรายงานผลแล้วจ้า !!";
-$arrayPostData['messages'][1]['type'] = "sticker";
-$arrayPostData['messages'][1]['packageId'] = "2";
-$arrayPostData['messages'][1]['stickerId'] = "34";
-pushMsg($arrayHeader,$arrayPostData);
-
-}if($message == "gettoken2"){ //free
-$content = file_get_contents("http://phonenana.com/line-bot/get-token.php?id=$id&member=2");
-//header("Location:http://phonenana.com/line-bot/get-token.php?id=$id");
-
 }
-
+if($message == "bot:เปิดการทำงาน"){
+  $content = file_get_contents("http://easylotto.in.th/line-bot/onoff.php?id=$id&userid=$userid&status=1");
+/*  $arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] ="เปิดการรายงานผลยี่กีแล้วจ้า !!";
+  $arrayPostData['messages'][1]['type'] = "sticker";
+  $arrayPostData['messages'][1]['packageId'] = "2";
+  $arrayPostData['messages'][1]['stickerId'] = "42";
+  pushMsg($arrayHeader,$arrayPostData);*/
+}
 
 function pushMsg($arrayHeader,$arrayPostData){
    $strUrl = "https://api.line.me/v2/bot/message/push";
