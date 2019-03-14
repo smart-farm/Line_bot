@@ -92,7 +92,7 @@ $url =["http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th"
 ,"http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th","http://easylotto.in.th/line-bot/line_winon.php?formula=wh","http://easylotto.in.th/line-bot/line_winon.php?formula=wl"
-,"http://easylotto.in.th/line-bot/line_winon.php?formula=rh","http://easylotto.in.th/line-bot/line_winon.php?formula=rl","http://easylotto.in.th/line-bot/line_winon.php?formula=rhl","http://easylotto.in.th/line-bot/line_winon.php?formula=ph2"
+,"http://easylotto.in.th/line-bot/line_winon.php?formula=rh","http://easylotto.in.th/line-bot/line_winon.php?formula=rl","http://easylotto.in.th/line-bot/line_winon.php?formula=rhl","http://easylotto.in.th/line-bot/line_winon.php?formula=ph1","http://easylotto.in.th/line-bot/line_winon.php?formula=ph2"
 ,"http://easylotto.in.th/line-bot/line_winon.php?formula=pl0","http://easylotto.in.th/line-bot/line_winon.php?formula=pl1"];
 
 /*"http://easylotto.in.th/line-bot/reviews-win.txt","http://easylotto.in.th/line-bot/reviews-rood.txt","http://easylotto.in.th/line-bot/reviews-rood.txt",
@@ -116,7 +116,7 @@ $url1=["http://easylotto.in.th/bot-lotto-all.php?lotto=1","http://easylotto.in.t
 ,"http://easylotto.in.th/bot-lotto-all.php?lotto=16","http://easylotto.in.th/bot-lotto-all.php?lotto=17","http://easylotto.in.th/bot-lotto-all.php?lotto=18","http://easylotto.in.th/bot-lotto-all.php?lotto=20"
 ,"http://easylotto.in.th/bot-lotto-all.php?lotto=19","http://easylotto.in.th/bot-lotto-all.php?lotto=21","http://easylotto.in.th/bot-lotto-all.php?lotto=22","http://easylotto.in.th/line-bot/reviews-winon.txt"
 ,"http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt"
-,"http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt"];
+,"http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt","http://easylotto.in.th/line-bot/reviews-winon.txt"];
 
 
 /*"http://easylotto.in.th/line-bot/del-win.php","http://easylotto.in.th/line-bot/del-rood.php","http://easylotto.in.th/line-bot/del-rood.php",
