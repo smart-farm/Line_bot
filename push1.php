@@ -15,7 +15,10 @@ $userid = $arrayJson['events'][0]['source']['userId'];
 
 if($message == "gettoken"){ //vip
 $content = file_get_contents("http://easylotto.in.th/line-bot/get-token.php?id=$id&userid=$userid&status=1");
-
+$arrayPostData['to'] = $id;
+  $arrayPostData['messages'][0]['type'] = "text";
+  $arrayPostData['messages'][0]['text'] =$id;
+  pushMsg($arrayHeader,$arrayPostData);
 
 }if($message == "bot:ปิดการทำงาน"){
   $content = file_get_contents("http://easylotto.in.th/line-bot/onoff.php?id=$id&userid=$userid&status=0");
