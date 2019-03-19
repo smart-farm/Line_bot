@@ -33,6 +33,36 @@ if($message == "gettoken"){
     $arrayPostData['messages'][0]['text'] =$id;
     pushMsg($arrayHeader,$arrayPostData);
 }
+if($message == "คำสั่ง"){
+    $arrayPostData['to'] = $id;
+    $arrayPostData['messages'][0]['type'] = "text";
+    $arrayPostData['messages'][0]['text'] ="คำสั่ง
+    1.เลขมัดบน
+    2.เลขมัดล่าง
+    3.เลขรูดบน
+    4.เลขรูดล่าง
+    5.หวยรัฐบาล
+    6.วินบน
+    7.วินล่าง
+    8.รูดบน
+    9.รูดล่าง
+    10.รูดบนล่าง
+    11.ปักสิบบน
+    12.ปักหน่วยบน
+    13.ปักสิบล่าง
+    14.ปักหน่วยล่าง
+    15.หวยลาว
+    16.หวยเวียดนาม
+    17.หวยมาเลย์
+    18.หุ้นไทยเย็น
+    19.หุ้นดาวน์โจน
+    20.นิเคอิเช้า
+    21.นิเคอิบ่าย
+    22.ฮั่งเส็งเช้า
+    23.ฮั่งเส็งบ่าย
+    ";
+    pushMsg($arrayHeader,$arrayPostData);
+}
 
 
 
